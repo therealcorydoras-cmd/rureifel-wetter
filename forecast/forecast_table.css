@@ -1,0 +1,110 @@
+/* styles for the forecast_table */
+.forecast {
+}
+.forecast td {
+  font-size: 80%;
+  text-align: left;
+}
+.legend {
+}
+.legend tr {
+  vertical-align: top;
+}
+.summary {
+}
+.summary tr {
+  vertical-align: top;
+}
+.period {
+}
+.col-outlook {
+  min-width: 36px;
+}
+.col-date {
+  min-width: 36px;
+  cursor: pointer;
+}
+.col-temp {
+  min-width: 30px;
+}
+.col-dewpoint {
+  min-width: 30px;
+}
+.col-humidity {
+  min-width: 30px;
+}
+.col-wind {
+  min-width: 60px;
+  height: 32px;
+}
+.col-pop {
+  min-width: 50px;
+}
+.col-precip {
+}
+.col-obvis {
+}
+.col-tides {
+  min-width: 80px;
+}
+.col-tides table {
+  padding-right: 5px;
+}
+.col-sun {
+  min-width: 30px;
+}
+.col-moon {
+  min-width: 30px;
+}
+.col-moonphase {
+  min-width: 30px;
+}
+.units {
+  color: #aaaaaa;
+}
+.day {
+  font-size: 120%;
+  font-weight: bold;
+  color: #207020;
+}
+.hour {
+  font-size: 80%;
+}
+.date {
+  font-size: 80%;
+}
+.temphi {
+  color: #ff4444;
+}
+.templo {
+  color: #4444ff;
+}
+.windgust {
+  color: #aaaaaa;
+}
+.winddir {
+  color: #aaaaaa;
+}
+.winddir-img {
+  width: 32px;
+}
+.outlook-img {
+  width: 32px;
+}
+.legend-img {
+  width: 15px;
+}
+.pop-img {
+  width: 8px;
+}
+.precip-img {
+  width: 32px;
+}
+.obvis-img {
+  width: 32px;
+}
+.sources p {
+  font-size: 8pt;
+  font-style: italic;
+  color: #aaaaaa;
+}

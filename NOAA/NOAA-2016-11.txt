@@ -1,0 +1,47 @@
+                   MONTHLY CLIMATOLOGICAL SUMMARY for Nov 2016
+
+
+NAME: Hürtgenwald-Straß,NRW,Deutschland                  
+ELEV: 247 meter    LAT: 50-44.32 N    LONG: 006-25.87 E
+
+
+                   TEMPERATURE (°C), RAIN (mm), WIND SPEED (m/s)
+
+                                         HEAT   COOL         AVG
+      MEAN                               DEG    DEG          WIND                   DOM
+DAY   TEMP   HIGH   TIME    LOW   TIME   DAYS   DAYS   RAIN  SPEED   HIGH   TIME    DIR
+---------------------------------------------------------------------------------------
+ 01
+ 02
+ 03
+ 04
+ 05
+ 06
+ 07
+ 08
+ 09
+ 10
+ 11
+ 12
+ 13
+ 14
+ 15
+ 16
+ 17
+ 18
+ 19
+ 20
+ 21
+ 22
+ 23
+ 24
+ 25
+ 26
+ 27
+ 28
+ 29
+ 30    5.0   25.9  15:24    3.2  22:22   13.4    0.0   42.1    N/A    N/A    N/A     90
+---------------------------------------------------------------------------------------
+       5.0   25.9     30    3.2     30   13.4    0.0   42.1    N/A    N/A       N/A     90
+    
+

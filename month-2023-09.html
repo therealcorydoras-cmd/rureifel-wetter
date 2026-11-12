@@ -1,0 +1,2882 @@
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <title>
+      Sep 2023 | Strass,NRW,Deutschland
+  </title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+
+<meta name="description" content="rureifel-wetter.de">
+<meta name="keywords" content="['weather', 'weewx', 'neowx-material']">
+
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Wetter">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="application-name" content="Wetter | Strass,NRW,Deutschland">
+
+<meta name="application-name" content="Wetter | Strass,NRW,Deutschland">
+<meta name="msapplication-tooltip" content="Strass,NRW,Deutschland">
+<meta name="msapplication-starturl" content="/">
+
+<meta name="msapplication-tap-highlight" content="no">
+
+<link href="img/icon-16.ico" rel="shortcut icon" type="image/x-icon">
+<link href="img/icon-16.png" rel="icon" type="image/png" sizes="16x16">
+<link href="img/icon-32.png" rel="icon" type="image/png" sizes="32x32">
+<link href="img/icon-48.png" rel="icon" type="image/png" sizes="48x48">
+
+<link href="img/icon-180.png" rel="apple-touch-icon">
+<link href="img/icon-76.png" rel="apple-touch-icon" sizes="76x76">
+<link href="img/icon-120.png" rel="apple-touch-icon" sizes="120x120">
+<link href="img/icon-152.png" rel="apple-touch-icon" sizes="152x152">
+
+<link href="img/icon-192.png" rel="icon" sizes="192x192">
+<link href="img/icon-128.png" rel="icon" sizes="128x128">
+
+<link href="manifest.json" rel="manifest">
+
+<link rel="stylesheet" href="css/bootstrap.min.css">
+
+<link rel="stylesheet" href="css/style.min.css">
+
+<link rel="stylesheet" href="weather-icons/css/weather-icons.min.css">
+<link rel="stylesheet" href="weather-icons/css/weather-icons-wind.min.css">
+
+
+
+
+
+<link
+        rel="apple-touch-startup-image"
+        media="screen and (device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
+        href="img/splash/splash_1136x640.png"
+/>
+<link
+        rel="apple-touch-startup-image"
+        media="screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"
+        href="img/splash/splash_2436x1125.png"
+/>
+<link
+        rel="apple-touch-startup-image"
+        media="screen and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
+        href="img/splash/splash_1792x828.png"
+/>
+<link
+        rel="apple-touch-startup-image"
+        media="screen and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
+        href="img/splash/splash_828x1792.png"
+/>
+<link
+        rel="apple-touch-startup-image"
+        media="screen and (device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
+        href="img/splash/splash_1334x750.png"
+/>
+<link
+        rel="apple-touch-startup-image"
+        media="screen and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"
+        href="img/splash/splash_1242x2688.png"
+/>
+<link
+        rel="apple-touch-startup-image"
+        media="screen and (device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"
+        href="img/splash/splash_2208x1242.png"
+/>
+<link
+        rel="apple-touch-startup-image"
+        media="screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"
+        href="img/splash/splash_1125x2436.png"
+/>
+<link
+        rel="apple-touch-startup-image"
+        media="screen and (device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"
+        href="img/splash/splash_1242x2208.png"
+/>
+<link
+        rel="apple-touch-startup-image"
+        media="screen and (device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
+        href="img/splash/splash_2732x2048.png"
+/>
+<link
+        rel="apple-touch-startup-image"
+        media="screen and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"
+        href="img/splash/splash_2688x1242.png"
+/>
+<link
+        rel="apple-touch-startup-image"
+        media="screen and (device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
+        href="img/splash/splash_2224x1668.png"
+/>
+<link
+        rel="apple-touch-startup-image"
+        media="screen and (device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
+        href="img/splash/splash_750x1334.png"
+/>
+<link
+        rel="apple-touch-startup-image"
+        media="screen and (device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
+        href="img/splash/splash_2048x2732.png"
+/>
+<link
+        rel="apple-touch-startup-image"
+        media="screen and (device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
+        href="img/splash/splash_2388x1668.png"
+/>
+<link
+        rel="apple-touch-startup-image"
+        media="screen and (device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
+        href="img/splash/splash_1668x2224.png"
+/>
+<link
+        rel="apple-touch-startup-image"
+        media="screen and (device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
+        href="img/splash/splash_640x1136.png"
+/>
+<link
+        rel="apple-touch-startup-image"
+        media="screen and (device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
+        href="img/splash/splash_1668x2388.png"
+/>
+<link
+        rel="apple-touch-startup-image"
+        media="screen and (device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
+        href="img/splash/splash_2048x1536.png"
+/>
+<link
+        rel="apple-touch-startup-image"
+        media="screen and (device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
+        href="img/splash/splash_1536x2048.png"
+/>
+</head>
+<body class="auto-theme main-bg" ontouchstart="">
+
+<header>
+
+    <nav class="navbar navbar-expand-lg navbar-dark teal">
+        <span class="navbar-brand d-flex">
+            <a class="mr-2" href="index.html">
+                <img src="img/icon-alpha-1x.png" srcset="img/icon-alpha-1x.png 1x, img/icon-alpha-2x.png 2x" style="width: 4rem">
+            </a>
+            <span>
+                <strong>Strass,NRW,Deutschland</strong><br>
+                <span class="font-small">01/10/23 00:00:00</span>
+            </span>
+        </span>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="ml-3 collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto mr-auto">
+
+                    <li class="nav-item mr-3">
+                        <a class="nav-link" href="index.html">Aktuell</a>
+                    </li>
+
+                    <li class="nav-item mr-3">
+                        <a class="nav-link" href="yesterday.html">Gestern</a>
+                    </li>
+
+                    <li class="nav-item mr-3">
+                        <a class="nav-link" href="week.html">Woche</a>
+                    </li>
+
+                    <li class="nav-item mr-3">
+                        <a class="nav-link" href="month.html">Monat</a>
+                    </li>
+
+                    <li class="nav-item mr-3">
+                        <a class="nav-link" href="year.html">Jahr</a>
+                    </li>
+
+                    <li class="nav-item active mr-3">
+                        <a class="nav-link" href="archive.html">Archiv</a>
+                    </li>
+
+                    <li class="nav-item mr-3">
+                        <a class="nav-link" href="almanac.html">Astronomie</a>
+                    </li>
+
+
+
+            </ul>
+        </div>
+
+    </nav>
+
+</header>
+<main>
+  <div class="container-fluid d-flex-xxl">
+
+    <div class="row my-4 temprow align-content-start">
+
+      <div class="col-12 mb-4 text-center">
+        <h2 class="h2-responsive text-dark">Sep 2023</h2>
+      </div>
+
+
+          <div class="col-12 col-lg-6 mb-4">
+    <div class="card">
+      <div class="card-body text-center">
+        <h3 class="h5-responsive teal-text">
+          Außentemperatur
+        </h3>
+
+
+        <div class="row">
+          <div class="col-3 text-muted font-small lo-text">
+            8.2°C <br>
+            (Mon 25 06:13)
+          </div>
+          <div class="col-6">
+            <h4 class="h2-responsive">18.9°C</h4>
+          </div>
+          <div class="col-3 text-muted font-small hi-text">
+            31.4°C <br>
+            (Mon 11 14:29)
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+
+
+
+          <div class="col-12 col-lg-6 mb-4">
+    <div class="card">
+      <div class="card-body text-center">
+        <h3 class="h5-responsive teal-text">
+          Luftfeuchtigkeit
+        </h3>
+
+
+        <div class="row">
+          <div class="col-3 text-muted font-small lo-text">
+            33% <br>
+            (Tue 05 15:37)
+          </div>
+          <div class="col-6">
+            <h4 class="h2-responsive">71%</h4>
+          </div>
+          <div class="col-3 text-muted font-small hi-text">
+            96% <br>
+            (Sun 03 06:02)
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+
+
+
+          <div class="col-12 col-lg-6 mb-4">
+    <div class="card">
+      <div class="card-body text-center">
+        <h3 class="h5-responsive teal-text">
+          Barometer
+        </h3>
+
+
+        <div class="row">
+          <div class="col-3 text-muted font-small lo-text">
+            995.6 mbar <br>
+            (Thu 21 18:18)
+          </div>
+          <div class="col-6">
+            <h4 class="h2-responsive">1015.7 mbar</h4>
+          </div>
+          <div class="col-3 text-muted font-small hi-text">
+            1028.0 mbar <br>
+            (Sun 03 11:09)
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+
+
+
+          <div class="col-12 col-lg-6 mb-4">
+    <div class="card">
+      <div class="card-body text-center">
+        <h3 class="h5-responsive teal-text">
+          Windgeschwindigkeit
+
+            <i class="wi wi-wind from-193-deg"
+               title="193°" data-toggle="tooltip"></i>
+
+        </h3>
+
+
+        <div class="row">
+          <div class="col-3 text-muted font-small">
+            5 km/h <br>
+            Durchschn.
+          </div>
+          <div class="col-6">
+            <h4 class="h2-responsive">
+              19 km/h SSW
+            </h4>
+          </div>
+          <div class="col-3 text-muted font-small hi-text">
+            44 km/h SW <br>
+            <i class="wi wi-wind from-232-deg mr-2"
+               title="232°" data-toggle="tooltip"></i>
+            (Tue 19 15:34)
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+
+
+
+          <div class="col-12 col-lg-6 mb-4">
+    <div class="card">
+      <div class="card-body text-center">
+        <h3 class="h5-responsive teal-text">
+          Niederschlag
+        </h3>
+
+
+        <div class="row">
+          <div class="col-3 text-muted font-small">
+
+          </div>
+          <div class="col-6">
+            <h4 class="h2-responsive">54.3 mm</h4>
+          </div>
+          <div class="col-3 text-muted font-small hi-text">
+            43.2 mm/h <br>
+            (Tue 12 20:12)
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+
+
+
+        
+
+
+          <div class="col-12 col-lg-6 mb-4">
+    <div class="card">
+      <div class="card-body text-center">
+        <h3 class="h5-responsive teal-text">
+          Taupunkt
+        </h3>
+
+
+        <div class="row">
+          <div class="col-3 text-muted font-small lo-text">
+            5.3°C <br>
+            (Mon 25 05:23)
+          </div>
+          <div class="col-6">
+            <h4 class="h2-responsive">13.1°C</h4>
+          </div>
+          <div class="col-3 text-muted font-small hi-text">
+            19.8°C <br>
+            (Sat 09 12:14)
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+
+
+
+          <div class="col-12 col-lg-6 mb-4">
+    <div class="card">
+      <div class="card-body text-center">
+        <h3 class="h5-responsive teal-text">
+          Windchill
+        </h3>
+
+
+        <div class="row">
+          <div class="col-3 text-muted font-small lo-text">
+            7.4°C <br>
+            (Sun 24 04:38)
+          </div>
+          <div class="col-6">
+            <h4 class="h2-responsive">18.9°C</h4>
+          </div>
+          <div class="col-3 text-muted font-small hi-text">
+            31.4°C <br>
+            (Mon 11 14:29)
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+
+
+
+          <div class="col-12 col-lg-6 mb-4">
+    <div class="card">
+      <div class="card-body text-center">
+        <h3 class="h5-responsive teal-text">
+          Hitzeindex
+        </h3>
+
+
+        <div class="row">
+          <div class="col-3 text-muted font-small lo-text">
+            7.2°C <br>
+            (Mon 25 06:13)
+          </div>
+          <div class="col-6">
+            <h4 class="h2-responsive">18.7°C</h4>
+          </div>
+          <div class="col-3 text-muted font-small hi-text">
+            32.7°C <br>
+            (Mon 11 14:29)
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+
+
+
+          <div class="col-12 col-lg-6 mb-4">
+    <div class="card">
+      <div class="card-body text-center">
+        <h3 class="h5-responsive teal-text">
+          Innentemperatur
+        </h3>
+
+
+        <div class="row">
+          <div class="col-3 text-muted font-small lo-text">
+            20.3°C <br>
+            (Sat 30 20:22)
+          </div>
+          <div class="col-6">
+            <h4 class="h2-responsive">23.9°C</h4>
+          </div>
+          <div class="col-3 text-muted font-small hi-text">
+            27.7°C <br>
+            (Sun 10 18:44)
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+
+
+
+          <div class="col-12 col-lg-6 mb-4">
+    <div class="card">
+      <div class="card-body text-center">
+        <h3 class="h5-responsive teal-text">
+          Luftfeuchtigkeit Innen
+        </h3>
+
+
+        <div class="row">
+          <div class="col-3 text-muted font-small lo-text">
+            47% <br>
+            (Mon 11 06:50)
+          </div>
+          <div class="col-6">
+            <h4 class="h2-responsive">58%</h4>
+          </div>
+          <div class="col-3 text-muted font-small hi-text">
+            69% <br>
+            (Wed 13 12:41)
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+
+
+
+          <div class="col-12 col-lg-6 mb-4">
+    <div class="card">
+      <div class="card-body text-center">
+        <h3 class="h5-responsive teal-text">
+          UV Index
+        </h3>
+
+
+        <div class="row">
+          <div class="col-3 text-muted font-small lo-text">
+            0.0 <br>
+            (Fri 01 00:00)
+          </div>
+          <div class="col-6">
+            <h4 class="h2-responsive">0.9</h4>
+          </div>
+          <div class="col-3 text-muted font-small hi-text">
+            8.0 <br>
+            (Fri 01 14:44)
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+
+
+
+            <div class="col-12 col-lg-6 mb-4">
+    <div class="card">
+      <div class="card-body text-center">
+        <h3 class="h5-responsive teal-text">
+          ET
+        </h3>
+
+
+        <div class="row">
+          <div class="col-3 text-muted font-small lo-text">
+            0.0 mm <br>
+            (Fri 01 07:25)
+          </div>
+          <div class="col-6">
+            <h4 class="h2-responsive">0.0 mm</h4>
+          </div>
+          <div class="col-3 text-muted font-small hi-text">
+            0.0 mm <br>
+            (Tue 05 13:55)
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+
+
+
+          <div class="col-12 col-lg-6 mb-4">
+    <div class="card">
+      <div class="card-body text-center">
+        <h3 class="h5-responsive teal-text">
+          Strahlung
+        </h3>
+
+
+        <div class="row">
+          <div class="col-3 text-muted font-small lo-text">
+            0 W/m² <br>
+            (Fri 01 00:00)
+          </div>
+          <div class="col-6">
+            <h4 class="h2-responsive">115 W/m²</h4>
+          </div>
+          <div class="col-3 text-muted font-small hi-text">
+            923 W/m² <br>
+            (Fri 01 14:44)
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+
+
+
+          <div class="col-12 col-lg-6 mb-4">
+    <div class="card">
+      <div class="card-body text-center">
+        <h3 class="h5-responsive teal-text">
+          Windtemperatur
+        </h3>
+
+
+        <div class="row">
+          <div class="col-3 text-muted font-small lo-text">
+            6.2°C <br>
+            (Sun 24 04:38)
+          </div>
+          <div class="col-6">
+            <h4 class="h2-responsive">18.9°C</h4>
+          </div>
+          <div class="col-3 text-muted font-small hi-text">
+            34.4°C <br>
+            (Mon 11 14:29)
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+
+
+
+          <div class="col-12 col-lg-6 mb-4">
+    <div class="card">
+      <div class="card-body text-center">
+        <h3 class="h5-responsive teal-text">
+          Wolkenuntergrenze
+        </h3>
+
+
+        <div class="row">
+          <div class="col-3 text-muted font-small lo-text">
+            338 meters <br>
+            (Thu 14 04:07)
+          </div>
+          <div class="col-6">
+            <h4 class="h2-responsive">982 meters</h4>
+          </div>
+          <div class="col-3 text-muted font-small hi-text">
+            2525 meters <br>
+            (Tue 05 16:44)
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+
+
+
+          <div class="col-12 col-lg-6 mb-4">
+    <div class="card">
+      <div class="card-body text-center">
+        <h3 class="h5-responsive teal-text">
+          Außentemperatur Nordseite
+        </h3>
+
+
+        <div class="row">
+          <div class="col-3 text-muted font-small lo-text">
+            9.3°C <br>
+            (Sun 24 07:14)
+          </div>
+          <div class="col-6">
+            <h4 class="h2-responsive">19.2°C</h4>
+          </div>
+          <div class="col-3 text-muted font-small hi-text">
+            29.5°C <br>
+            (Tue 05 16:00)
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+
+
+
+          <div class="col-12 col-lg-6 mb-4">
+    <div class="card">
+      <div class="card-body text-center">
+        <h3 class="h5-responsive teal-text">
+          Luftfeuchtigkeit Nordseite
+        </h3>
+
+
+        <div class="row">
+          <div class="col-3 text-muted font-small lo-text">
+            37% <br>
+            (Tue 05 15:01)
+          </div>
+          <div class="col-6">
+            <h4 class="h2-responsive">70%</h4>
+          </div>
+          <div class="col-3 text-muted font-small hi-text">
+            90% <br>
+            (Sun 03 07:45)
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+
+
+
+          <div class="col-12 col-lg-6 mb-4">
+    <div class="card">
+      <div class="card-body text-center">
+        <h3 class="h5-responsive teal-text">
+          Temperature2
+        </h3>
+
+
+        <div class="row">
+          <div class="col-3 text-muted font-small lo-text">
+            19.3°C <br>
+            (Sun 24 07:01)
+          </div>
+          <div class="col-6">
+            <h4 class="h2-responsive">23.6°C</h4>
+          </div>
+          <div class="col-3 text-muted font-small hi-text">
+            28.3°C <br>
+            (Mon 11 23:10)
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+
+
+
+          <div class="col-12 col-lg-6 mb-4">
+    <div class="card">
+      <div class="card-body text-center">
+        <h3 class="h5-responsive teal-text">
+          extraHumid2
+        </h3>
+
+
+        <div class="row">
+          <div class="col-3 text-muted font-small lo-text">
+            49% <br>
+            (Mon 25 14:19)
+          </div>
+          <div class="col-6">
+            <h4 class="h2-responsive">56%</h4>
+          </div>
+          <div class="col-3 text-muted font-small hi-text">
+            63% <br>
+            (Sat 02 01:27)
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+
+
+
+          <div class="col-12 col-lg-6 mb-4">
+    <div class="card">
+      <div class="card-body text-center">
+        <h3 class="h5-responsive teal-text">
+          Temperature3
+        </h3>
+
+
+        <div class="row">
+          <div class="col-3 text-muted font-small lo-text">
+            17.2°C <br>
+            (Sun 24 09:37)
+          </div>
+          <div class="col-6">
+            <h4 class="h2-responsive">21.0°C</h4>
+          </div>
+          <div class="col-3 text-muted font-small hi-text">
+            26.4°C <br>
+            (Mon 11 18:54)
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+
+
+
+          <div class="col-12 col-lg-6 mb-4">
+    <div class="card">
+      <div class="card-body text-center">
+        <h3 class="h5-responsive teal-text">
+          extraHumid3
+        </h3>
+
+
+        <div class="row">
+          <div class="col-3 text-muted font-small lo-text">
+            58% <br>
+            (Fri 15 07:18)
+          </div>
+          <div class="col-6">
+            <h4 class="h2-responsive">65%</h4>
+          </div>
+          <div class="col-3 text-muted font-small hi-text">
+            72% <br>
+            (Mon 11 18:46)
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+
+
+
+        
+
+
+        
+
+
+        
+
+
+        
+
+
+        
+
+
+        
+
+
+        
+
+
+        
+
+
+        
+
+
+        
+
+
+    </div>
+
+    <hr class="my-4 rowdivider">
+
+    <div class="row mt-5 mb-4 graphrow align-content-start">
+
+
+            <div class="col-12 col-xl-6 mb-4">
+      <div class="card">
+        <div class="card-body text-center">
+          <h5 class="h5-responsive teal-text">
+              Außentemperatur
+          </h5>
+          <div id="outTempchart"></div>
+        </div>
+      </div>
+    </div>
+
+
+
+            <div class="col-12 col-xl-6 mb-4">
+      <div class="card">
+        <div class="card-body text-center">
+          <h5 class="h5-responsive teal-text">
+              Windchill
+          </h5>
+          <div id="windchillchart"></div>
+        </div>
+      </div>
+    </div>
+
+
+
+            <div class="col-12 col-xl-6 mb-4">
+      <div class="card">
+        <div class="card-body text-center">
+          <h5 class="h5-responsive teal-text">
+              Barometer
+          </h5>
+          <div id="barometerchart"></div>
+        </div>
+      </div>
+    </div>
+
+
+
+            <div class="col-12 col-xl-6 mb-4">
+      <div class="card">
+        <div class="card-body text-center">
+          <h5 class="h5-responsive teal-text">
+              Niederschlag
+          </h5>
+          <div id="rainchart"></div>
+        </div>
+      </div>
+    </div>
+
+
+
+        
+
+
+            <div class="col-12 col-xl-6 mb-4">
+      <div class="card">
+        <div class="card-body text-center">
+          <h5 class="h5-responsive teal-text">
+              Windgeschwindigkeit
+          </h5>
+          <div id="windSpeedchart"></div>
+        </div>
+      </div>
+    </div>
+
+
+
+            <div class="col-12 col-xl-6 mb-4">
+      <div class="card">
+        <div class="card-body text-center">
+          <h5 class="h5-responsive teal-text">
+              Windvektor
+          </h5>
+          <div id="windvecchart"></div>
+        </div>
+      </div>
+    </div>
+
+
+
+            <div class="col-12 col-xl-6 mb-4">
+      <div class="card">
+        <div class="card-body text-center">
+          <h5 class="h5-responsive teal-text">
+              UV Index
+          </h5>
+          <div id="UVchart"></div>
+        </div>
+      </div>
+    </div>
+
+
+
+              <div class="col-12 col-xl-6 mb-4">
+      <div class="card">
+        <div class="card-body text-center">
+          <h5 class="h5-responsive teal-text">
+              ET
+          </h5>
+          <div id="ETchart"></div>
+        </div>
+      </div>
+    </div>
+
+
+
+            <div class="col-12 col-xl-6 mb-4">
+      <div class="card">
+        <div class="card-body text-center">
+          <h5 class="h5-responsive teal-text">
+              Strahlung
+          </h5>
+          <div id="radiationchart"></div>
+        </div>
+      </div>
+    </div>
+
+
+
+            <div class="col-12 col-xl-6 mb-4">
+      <div class="card">
+        <div class="card-body text-center">
+          <h5 class="h5-responsive teal-text">
+              Luftfeuchtigkeit
+          </h5>
+          <div id="outHumiditychart"></div>
+        </div>
+      </div>
+    </div>
+
+
+
+            <div class="col-12 col-xl-6 mb-4">
+      <div class="card">
+        <div class="card-body text-center">
+          <h5 class="h5-responsive teal-text">
+              Innentemperatur
+          </h5>
+          <div id="inTempchart"></div>
+        </div>
+      </div>
+    </div>
+
+
+
+            <div class="col-12 col-xl-6 mb-4">
+      <div class="card">
+        <div class="card-body text-center">
+          <h5 class="h5-responsive teal-text">
+              Luftfeuchtigkeit Innen
+          </h5>
+          <div id="inHumiditychart"></div>
+        </div>
+      </div>
+    </div>
+
+
+
+        
+
+
+            <div class="col-12 col-xl-6 mb-4">
+      <div class="card">
+        <div class="card-body text-center">
+          <h5 class="h5-responsive teal-text">
+              Wolkenuntergrenze
+          </h5>
+          <div id="cloudbasechart"></div>
+        </div>
+      </div>
+    </div>
+
+
+
+            <div class="col-12 col-xl-6 mb-4">
+      <div class="card">
+        <div class="card-body text-center">
+          <h5 class="h5-responsive teal-text">
+              Außentemperatur Nordseite
+          </h5>
+          <div id="extraTemp1chart"></div>
+        </div>
+      </div>
+    </div>
+
+
+
+            <div class="col-12 col-xl-6 mb-4">
+      <div class="card">
+        <div class="card-body text-center">
+          <h5 class="h5-responsive teal-text">
+              Luftfeuchtigkeit Nordseite
+          </h5>
+          <div id="extraHumid1chart"></div>
+        </div>
+      </div>
+    </div>
+
+
+
+            <div class="col-12 col-xl-6 mb-4">
+      <div class="card">
+        <div class="card-body text-center">
+          <h5 class="h5-responsive teal-text">
+              Temperature2
+          </h5>
+          <div id="extraTemp2chart"></div>
+        </div>
+      </div>
+    </div>
+
+
+
+            <div class="col-12 col-xl-6 mb-4">
+      <div class="card">
+        <div class="card-body text-center">
+          <h5 class="h5-responsive teal-text">
+              extraHumid2
+          </h5>
+          <div id="extraHumid2chart"></div>
+        </div>
+      </div>
+    </div>
+
+
+
+            <div class="col-12 col-xl-6 mb-4">
+      <div class="card">
+        <div class="card-body text-center">
+          <h5 class="h5-responsive teal-text">
+              Temperature3
+          </h5>
+          <div id="extraTemp3chart"></div>
+        </div>
+      </div>
+    </div>
+
+
+
+            <div class="col-12 col-xl-6 mb-4">
+      <div class="card">
+        <div class="card-body text-center">
+          <h5 class="h5-responsive teal-text">
+              extraHumid3
+          </h5>
+          <div id="extraHumid3chart"></div>
+        </div>
+      </div>
+    </div>
+
+
+
+        
+
+
+        
+
+
+        
+
+
+        
+
+
+        
+
+
+        
+
+
+        
+
+
+        
+
+
+        
+
+
+        
+
+    </div>
+
+  </div>
+</main>
+
+
+<footer class="page-footer font-small teal pt-4">
+
+    <div class="container-fluid text-center text-md-left mb-4">
+
+        <div class="row">
+
+            <div class="col-md-6 mt-md-0 mt-3">
+
+                <h5 class="text-uppercase">Über</h5>
+
+                <table class="d-inline">
+                    <tr>
+                        <td>Hardware:</td>
+                        <td>GW1000</td>
+                    </tr>
+                    <tr>
+                        <td>Höhe:</td>
+                        <td>261 meters</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="telemetry.html">
+                                Telemetrie
+                            </a>
+                        </td>
+                        <td></td>
+                    </tr>
+                </table>
+
+
+            </div>
+
+            <hr class="clearfix w-100 d-md-none pb-3">
+
+            <div class="col-md-3 mb-md-0 mb-3">
+
+                <h5 class="text-uppercase">rureifel-wetter.de</h5>
+
+                <p>Meine Wetterstation sammelt Wetterdaten am Rande der Eifel. Hardware: Froggit DP1500 Wi-Fi Wetterserver + WH65-Y-Design Außeneinheit + WH32F Außenbereich Thermo-Hygrometer Funksensor</p>
+            </div>
+
+            <div class="col-md-3 mb-md-0 mb-3">
+
+                <h5 class="text-uppercase">Links</h5>
+
+                <ul class="list-unstyled">
+                    <li>
+                        <a href="https://www.lightningmaps.org" target="_blank" rel="noopener">Lightning Maps</a>
+                    </li>
+                    <li>
+                        <a href="https://www.windy.com" target="_blank" rel="noopener">Windy</a>
+                    </li>
+                    <li>
+                        <a href="https://goo.gl/maps/DS7gzF6JJAsDRq4s6" target="_blank" rel="noopener">Standort der Wetterstation</a>
+                    </li>
+                </ul>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="footer-copyright text-center py-3">
+        &copy; 2023 André Victor
+
+          <span class="mx-2">&bull;</span>
+          Powered by <a href="https://weewx.com" target="_blank">weewx</a>
+          v4.10.2
+
+          <span class="mx-2">&bull;</span>
+          <a href="https://neoground.com/projects/neowx-material" target="_blank">NeoWX Material</a> skin
+          v1.11
+
+    </div>
+
+</footer>
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/popper.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/mdb.min.js"></script>
+<script src="js/vendor/moment-with-locales.min.js"></script>
+<script type="text/javascript">moment.locale('de')</script>
+<script src="js/vendor/apexcharts/apexcharts.min.js"></script>
+<script type="text/javascript" src="js/app.js"></script>
+
+<script type="text/javascript">
+    var config_mode = 'auto';
+    var theme_mode = 'light';
+    if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        theme_mode = 'dark';
+    }
+    // Override mode by config
+    if(config_mode != "auto") {
+        theme_mode = config_mode;
+    }
+
+    window.Apex = {
+        theme: {
+            mode: theme_mode,
+            palette: 'palette1'
+        },
+        dataLabels: {
+            enabled: false
+        },
+        stroke: {
+            curve: 'smooth',
+            width: 2
+        },
+        markers: {
+            size: 0,
+        },
+        chart: {
+            height: 300,
+            stacked: false,
+            zoom: {
+                type: 'x',
+                enabled: true,
+                autoScaleYaxis: true
+            },
+            toolbar: {
+                autoSelected: 'zoom',
+                export: {
+                    csv: {
+                        headerCategory: 'DateTime',
+                        dateFormatter(timestamp) {
+                            return moment.unix(timestamp).toISOString()
+                        }
+                    }
+                }
+            },
+            locales: [
+{
+  "name": "de",
+  "options": {
+    "months": [
+      "Januar",
+      "Februar",
+      "März",
+      "April",
+      "Mai",
+      "Juni",
+      "Juli",
+      "August",
+      "September",
+      "Oktober",
+      "November",
+      "Dezember"
+    ],
+    "shortMonths": [
+      "Jan",
+      "Feb",
+      "Mär",
+      "Apr",
+      "Mai",
+      "Jun",
+      "Jul",
+      "Aug",
+      "Sep",
+      "Okt",
+      "Nov",
+      "Dez"
+    ],
+    "days": [
+      "Sonntag",
+      "Montag",
+      "Dienstag",
+      "Mittwoch",
+      "Donnerstag",
+      "Freitag",
+      "Samstag"
+    ],
+    "shortDays": ["So", "Mo", "Di", "Mi", "Do", "Fr", "Sa"],
+    "toolbar": {
+      "exportToSVG": "SVG speichern",
+      "exportToPNG": "PNG speichern",
+      "exportToCSV": "CSV speichern",
+      "menu": "Menü",
+      "selection": "Auswahl",
+      "selectionZoom": "Auswahl vergrößern",
+      "zoomIn": "Vergrößern",
+      "zoomOut": "Verkleinern",
+      "pan": "Verschieben",
+      "reset": "Zoom zurücksetzen"
+    }
+  }
+}
+            ],
+            defaultLocale: 'de',
+            animations: {
+                enabled: false
+            },
+        },
+    }
+</script>
+
+
+
+
+
+
+<script type="text/javascript">
+  // Config templates
+
+  var graph_area_config = {
+
+chart: {
+    type: 'area'
+},
+fill: {
+    type: 'gradient',
+    gradient: {
+        shadeIntensity: 1,
+        inverseColors: false,
+        opacityFrom: 0.6,
+        opacityTo: 0,
+        stops: [0, 75, 100]
+    },
+},
+xaxis: {
+    type: 'datetime',
+    hideOverlappingLabels: true,
+    tickAmount: 8,
+    labels: {
+        formatter: function(val, timestamp) {
+            return moment.unix(timestamp).format("DD.MM.YY");
+        }
+    }
+},
+tooltip: {
+    x: {
+        format: "dd DD.MM. HH:MM"
+    }
+},  }
+  var graph_bar_config = {
+
+chart: {
+    type: 'bar'
+},
+fill: {
+    opacity: 0.1
+},
+xaxis: {
+    type: 'datetime',
+    hideOverlappingLabels: true,
+    tickAmount: 8,
+    labels: {
+        formatter: function(val, timestamp) {
+            return moment.unix(timestamp).format("DD.MM.YY");
+        }
+    }
+},
+tooltip: {
+    x: {
+        format: "dd DD.MM. HH:MM"
+    }
+},  }
+
+  var graph_radar_config = {
+
+chart: {
+    type: 'radar',
+},
+fill: {
+    opacity: 0.1
+},
+xaxis: {
+    categories: [
+      'N',
+      'NO',
+      'O',
+      'SO',
+      'S',
+      'SW',
+      'W',
+      'NW'
+    ]
+},
+tooltip: {
+    x: {
+        formatter: function(value, { series, seriesIndex, dataPointIndex, w }) {
+            return value
+        }
+    }
+},  }
+
+  // outTemp + Dewpoint
+  
+
+
+
+new ApexCharts(document.querySelector('#outTempchart'), {
+  ...graph_area_config,
+  yaxis: {
+    labels: {
+      formatter: function (val) {
+        return formatNumber(val, "%.1f") + "°C";
+      }
+    }
+  },
+  series: [
+    {
+      name: "Außentemperatur Min",
+      data: [       [1693519200, 13.1],
+      [1693605600, 16.1],
+      [1693692000, 14.0],
+      [1693778400, 13.9],
+      [1693864800, 14.5],
+      [1693951200, 14.9],
+      [1694037600, 17.1],
+      [1694124000, 18.6],
+      [1694210400, 21.1],
+      [1694296800, 19.4],
+      [1694383200, 20.4],
+      [1694469600, 16.0],
+      [1694556000, 13.1],
+      [1694642400, 11.0],
+      [1694728800, 12.9],
+      [1694815200, 14.1],
+      [1694901600, 16.1],
+      [1694988000, 15.2],
+      [1695074400, 12.6],
+      [1695160800, 15.1],
+      [1695247200, 13.0],
+      [1695333600, 10.6],
+      [1695420000, 10.3],
+      [1695506400, 8.3],
+      [1695592800, 8.2],
+      [1695679200, 14.9],
+      [1695765600, 14.6],
+      [1695852000, 15.3],
+      [1695938400, 12.8],
+      [1696024800, 10.7],
+ ]
+    },
+    {
+      name: "Außentemperatur Max",
+      data: [       [1693519200, 19.4],
+      [1693605600, 21.7],
+      [1693692000, 23.2],
+      [1693778400, 26.1],
+      [1693864800, 30.9],
+      [1693951200, 29.1],
+      [1694037600, 29.6],
+      [1694124000, 30.4],
+      [1694210400, 30.4],
+      [1694296800, 31.0],
+      [1694383200, 31.4],
+      [1694469600, 24.1],
+      [1694556000, 21.4],
+      [1694642400, 20.5],
+      [1694728800, 23.4],
+      [1694815200, 26.3],
+      [1694901600, 26.4],
+      [1694988000, 23.3],
+      [1695074400, 19.2],
+      [1695160800, 22.2],
+      [1695247200, 20.1],
+      [1695333600, 18.2],
+      [1695420000, 16.8],
+      [1695506400, 20.1],
+      [1695592800, 23.3],
+      [1695679200, 16.5],
+      [1695765600, 26.6],
+      [1695852000, 22.5],
+      [1695938400, 22.4],
+      [1696024800, 19.1],
+ ]
+    }
+    ,{
+      name: "Taupunkt",
+      data: [       [1693519200, 13.8],
+      [1693605600, 15.1],
+      [1693692000, 14.0],
+      [1693778400, 12.8],
+      [1693864800, 12.5],
+      [1693951200, 13.2],
+      [1694037600, 14.0],
+      [1694124000, 15.4],
+      [1694210400, 17.4],
+      [1694296800, 17.2],
+      [1694383200, 16.5],
+      [1694469600, 16.2],
+      [1694556000, 14.5],
+      [1694642400, 11.5],
+      [1694728800, 11.1],
+      [1694815200, 14.5],
+      [1694901600, 16.6],
+      [1694988000, 14.7],
+      [1695074400, 10.5],
+      [1695160800, 12.6],
+      [1695247200, 12.8],
+      [1695333600, 9.5],
+      [1695420000, 8.8],
+      [1695506400, 8.2],
+      [1695592800, 8.1],
+      [1695679200, 9.5],
+      [1695765600, 12.1],
+      [1695852000, 14.0],
+      [1695938400, 14.5],
+      [1696024800, 10.2],
+ ]
+    }
+  ]
+}).render()
+
+
+
+
+
+  // Wind chill + Heat index + optional appTemp
+  
+
+
+new ApexCharts(document.querySelector('#windchillchart'), {
+  ...graph_area_config,
+  yaxis: {
+    labels: {
+      formatter: function (val) {
+        return formatNumber(val, "%.1f") + "°C";
+      }
+    }
+  },
+  series: [
+    {
+      name: "Windchill",
+      data: [       [1693519200, 15.9],
+      [1693605600, 17.5],
+      [1693692000, 17.6],
+      [1693778400, 19.6],
+      [1693864800, 23.1],
+      [1693951200, 23.3],
+      [1694037600, 23.2],
+      [1694124000, 24.4],
+      [1694210400, 25.5],
+      [1694296800, 25.6],
+      [1694383200, 25.4],
+      [1694469600, 19.8],
+      [1694556000, 16.8],
+      [1694642400, 15.2],
+      [1694728800, 17.2],
+      [1694815200, 20.1],
+      [1694901600, 21.0],
+      [1694988000, 19.6],
+      [1695074400, 15.8],
+      [1695160800, 18.1],
+      [1695247200, 16.8],
+      [1695333600, 13.6],
+      [1695420000, 12.7],
+      [1695506400, 14.1],
+      [1695592800, 15.7],
+      [1695679200, 15.6],
+      [1695765600, 20.6],
+      [1695852000, 19.6],
+      [1695938400, 18.2],
+      [1696024800, 14.1],
+ ]
+    }
+    ,{
+      name: "Hitzeindex",
+      data: [       [1693519200, 15.9],
+      [1693605600, 17.6],
+      [1693692000, 17.5],
+      [1693778400, 19.4],
+      [1693864800, 22.7],
+      [1693951200, 23.0],
+      [1694037600, 23.0],
+      [1694124000, 24.6],
+      [1694210400, 26.0],
+      [1694296800, 26.0],
+      [1694383200, 25.7],
+      [1694469600, 19.9],
+      [1694556000, 16.8],
+      [1694642400, 14.8],
+      [1694728800, 16.8],
+      [1694815200, 20.0],
+      [1694901600, 21.1],
+      [1694988000, 19.5],
+      [1695074400, 15.3],
+      [1695160800, 17.9],
+      [1695247200, 16.6],
+      [1695333600, 13.1],
+      [1695420000, 12.1],
+      [1695506400, 13.4],
+      [1695592800, 15.0],
+      [1695679200, 15.0],
+      [1695765600, 20.3],
+      [1695852000, 19.4],
+      [1695938400, 18.2],
+      [1696024800, 13.7],
+ ]
+    }
+    ,{
+      name: "Windtemperatur",
+      data: [       [1693519200, 16.1],
+      [1693605600, 18.1],
+      [1693692000, 18.5],
+      [1693778400, 19.4],
+      [1693864800, 22.7],
+      [1693951200, 23.4],
+      [1694037600, 23.4],
+      [1694124000, 25.3],
+      [1694210400, 27.3],
+      [1694296800, 27.3],
+      [1694383200, 26.5],
+      [1694469600, 21.4],
+      [1694556000, 17.2],
+      [1694642400, 15.0],
+      [1694728800, 16.3],
+      [1694815200, 20.8],
+      [1694901600, 22.3],
+      [1694988000, 19.5],
+      [1695074400, 14.0],
+      [1695160800, 17.7],
+      [1695247200, 17.0],
+      [1695333600, 12.0],
+      [1695420000, 11.0],
+      [1695506400, 12.7],
+      [1695592800, 14.3],
+      [1695679200, 13.8],
+      [1695765600, 20.3],
+      [1695852000, 19.9],
+      [1695938400, 18.4],
+      [1696024800, 13.6],
+ ]
+    }
+  ]
+}).render()
+
+
+
+
+
+  // Barometer
+  
+
+
+new ApexCharts(document.querySelector('#barometerchart'), {
+  ...graph_area_config,
+  yaxis: {
+    labels: {
+      formatter: function (val) {
+        return formatNumber(val, "%.1f") + " mbar";
+      }
+    }
+  },
+  series: [
+    {
+      name: "Barometer",
+      data: [       [1693519200, 1012.5],
+      [1693605600, 1019.6],
+      [1693692000, 1026.4],
+      [1693778400, 1024.3],
+      [1693864800, 1018.5],
+      [1693951200, 1018.6],
+      [1694037600, 1017.9],
+      [1694124000, 1016.3],
+      [1694210400, 1016.2],
+      [1694296800, 1016.3],
+      [1694383200, 1012.6],
+      [1694469600, 1012.3],
+      [1694556000, 1016.7],
+      [1694642400, 1021.6],
+      [1694728800, 1017.0],
+      [1694815200, 1013.1],
+      [1694901600, 1011.4],
+      [1694988000, 1005.4],
+      [1695074400, 1011.0],
+      [1695160800, 1007.6],
+      [1695247200, 998.8],
+      [1695333600, 1002.0],
+      [1695420000, 1014.6],
+      [1695506400, 1024.0],
+      [1695592800, 1021.9],
+      [1695679200, 1021.6],
+      [1695765600, 1016.8],
+      [1695852000, 1016.1],
+      [1695938400, 1017.6],
+      [1696024800, 1025.8],
+ ]
+    }
+  ]
+}).render()
+
+
+
+
+
+  // Rain
+  
+
+
+new ApexCharts(document.querySelector('#rainchart'), {
+  ...graph_bar_config,
+  yaxis: {
+    labels: {
+      formatter: function (val) {
+        return formatNumber(val, "%.1f") + " mm";
+      }
+    }
+  },
+  series: [
+    {
+      name: "Niederschlag",
+      data: [       [1693519200, 9.4],
+      [1693605600, 0.0],
+      [1693692000, 0.0],
+      [1693778400, 0.0],
+      [1693864800, 0.0],
+      [1693951200, 0.0],
+      [1694037600, 0.0],
+      [1694124000, 0.0],
+      [1694210400, 0.0],
+      [1694296800, 0.0],
+      [1694383200, 0.0],
+      [1694469600, 18.8],
+      [1694556000, 2.0],
+      [1694642400, 0.0],
+      [1694728800, 0.0],
+      [1694815200, 0.0],
+      [1694901600, 5.1],
+      [1694988000, 5.5],
+      [1695074400, 0.0],
+      [1695160800, 0.0],
+      [1695247200, 7.1],
+      [1695333600, 2.8],
+      [1695420000, 0.0],
+      [1695506400, 0.0],
+      [1695592800, 0.0],
+      [1695679200, 0.0],
+      [1695765600, 0.0],
+      [1695852000, 0.0],
+      [1695938400, 3.3],
+      [1696024800, 0.3],
+ ]
+    }
+  ]
+}).render()
+
+
+
+
+
+  // Wind
+  
+
+
+new ApexCharts(document.querySelector('#windSpeedchart'), {
+  ...graph_area_config,
+  yaxis: {
+    labels: {
+      formatter: function (val) {
+        return formatNumber(val, "%.0f") + " km/h";
+      }
+    }
+  },
+  series: [
+    {
+      name: "Windgeschwindigkeit",
+      data: [       [1693519200, 12],
+      [1693605600, 14],
+      [1693692000, 5],
+      [1693778400, 10],
+      [1693864800, 11],
+      [1693951200, 10],
+      [1694037600, 10],
+      [1694124000, 15],
+      [1694210400, 8],
+      [1694296800, 9],
+      [1694383200, 17],
+      [1694469600, 19],
+      [1694556000, 12],
+      [1694642400, 9],
+      [1694728800, 14],
+      [1694815200, 11],
+      [1694901600, 12],
+      [1694988000, 18],
+      [1695074400, 18],
+      [1695160800, 17],
+      [1695247200, 14],
+      [1695333600, 15],
+      [1695420000, 16],
+      [1695506400, 10],
+      [1695592800, 17],
+      [1695679200, 12],
+      [1695765600, 12],
+      [1695852000, 18],
+      [1695938400, 15],
+      [1696024800, 8],
+ ]
+    }
+    ,{
+      name: "Böengeschwindigkeit",
+      data: [       [1693519200, 26],
+      [1693605600, 18],
+      [1693692000, 11],
+      [1693778400, 22],
+      [1693864800, 24],
+      [1693951200, 20],
+      [1694037600, 22],
+      [1694124000, 20],
+      [1694210400, 15],
+      [1694296800, 15],
+      [1694383200, 24],
+      [1694469600, 37],
+      [1694556000, 28],
+      [1694642400, 15],
+      [1694728800, 20],
+      [1694815200, 17],
+      [1694901600, 24],
+      [1694988000, 35],
+      [1695074400, 44],
+      [1695160800, 35],
+      [1695247200, 26],
+      [1695333600, 31],
+      [1695420000, 30],
+      [1695506400, 20],
+      [1695592800, 26],
+      [1695679200, 17],
+      [1695765600, 26],
+      [1695852000, 31],
+      [1695938400, 33],
+      [1696024800, 13],
+ ]
+    }
+  ]
+}).render()
+
+
+
+
+
+  // outHumidity
+  
+
+
+new ApexCharts(document.querySelector('#outHumiditychart'), {
+  ...graph_area_config,
+  yaxis: {
+    labels: {
+      formatter: function (val) {
+        return formatNumber(val, "%.0f") + "%";
+      }
+    }
+  },
+  series: [
+    {
+      name: "Luftfeuchtigkeit",
+      data: [       [1693519200, 87],
+      [1693605600, 86],
+      [1693692000, 81],
+      [1693778400, 66],
+      [1693864800, 53],
+      [1693951200, 55],
+      [1694037600, 57],
+      [1694124000, 58],
+      [1694210400, 62],
+      [1694296800, 61],
+      [1694383200, 59],
+      [1694469600, 80],
+      [1694556000, 87],
+      [1694642400, 80],
+      [1694728800, 68],
+      [1694815200, 71],
+      [1694901600, 77],
+      [1694988000, 74],
+      [1695074400, 71],
+      [1695160800, 70],
+      [1695247200, 78],
+      [1695333600, 77],
+      [1695420000, 78],
+      [1695506400, 69],
+      [1695592800, 63],
+      [1695679200, 67],
+      [1695765600, 59],
+      [1695852000, 71],
+      [1695938400, 80],
+      [1696024800, 78],
+ ]
+    }
+  ]
+}).render()
+
+
+
+
+
+  // UV / ET / Radiation
+  
+
+
+new ApexCharts(document.querySelector('#UVchart'), {
+  ...graph_area_config,
+  yaxis: {
+    labels: {
+      formatter: function (val) {
+        return formatNumber(val, "%.1f") + "";
+      }
+    }
+  },
+  series: [
+    {
+      name: "UV Index",
+      data: [       [1693519200, 8.0],
+      [1693605600, 0.0],
+      [1693692000, 5.0],
+      [1693778400, 5.0],
+      [1693864800, 5.0],
+      [1693951200, 5.0],
+      [1694037600, 5.0],
+      [1694124000, 5.0],
+      [1694210400, 5.0],
+      [1694296800, 5.0],
+      [1694383200, 5.0],
+      [1694469600, 5.0],
+      [1694556000, 7.0],
+      [1694642400, 6.0],
+      [1694728800, 5.0],
+      [1694815200, 5.0],
+      [1694901600, 5.0],
+      [1694988000, 6.0],
+      [1695074400, 5.0],
+      [1695160800, 5.0],
+      [1695247200, 1.0],
+      [1695333600, 5.0],
+      [1695420000, 5.0],
+      [1695506400, 4.0],
+      [1695592800, 5.0],
+      [1695679200, 0.0],
+      [1695765600, 4.0],
+      [1695852000, 4.0],
+      [1695938400, 5.0],
+      [1696024800, 4.0],
+ ]
+    }
+  ]
+}).render()
+
+
+
+
+
+  
+
+
+new ApexCharts(document.querySelector('#ETchart'), {
+  ...graph_area_config,
+  yaxis: {
+    labels: {
+      formatter: function (val) {
+        return formatNumber(val, "%.1f") + " mm";
+      }
+    }
+  },
+  series: [
+    {
+      name: "ET",
+      data: [       [1693519200, 0.0],
+      [1693605600, 0.0],
+      [1693692000, 0.0],
+      [1693778400, 0.0],
+      [1693864800, 0.0],
+      [1693951200, 0.0],
+      [1694037600, 0.0],
+      [1694124000, 0.0],
+      [1694210400, 0.0],
+      [1694296800, 0.0],
+      [1694383200, 0.0],
+      [1694469600, 0.0],
+      [1694556000, 0.0],
+      [1694642400, 0.0],
+      [1694728800, 0.0],
+      [1694815200, 0.0],
+      [1694901600, 0.0],
+      [1694988000, 0.0],
+      [1695074400, 0.0],
+      [1695160800, 0.0],
+      [1695247200, 0.0],
+      [1695333600, 0.0],
+      [1695420000, 0.0],
+      [1695506400, 0.0],
+      [1695592800, 0.0],
+      [1695679200, 0.0],
+      [1695765600, 0.0],
+      [1695852000, 0.0],
+      [1695938400, 0.0],
+      [1696024800, 0.0],
+ ]
+    }
+  ]
+}).render()
+
+
+
+
+
+  
+
+
+new ApexCharts(document.querySelector('#radiationchart'), {
+  ...graph_area_config,
+  yaxis: {
+    labels: {
+      formatter: function (val) {
+        return formatNumber(val, "%.0f") + " W/m²";
+      }
+    }
+  },
+  series: [
+    {
+      name: "Strahlung",
+      data: [       [1693519200, 923],
+      [1693605600, 60],
+      [1693692000, 599],
+      [1693778400, 583],
+      [1693864800, 574],
+      [1693951200, 566],
+      [1694037600, 555],
+      [1694124000, 544],
+      [1694210400, 556],
+      [1694296800, 529],
+      [1694383200, 518],
+      [1694469600, 595],
+      [1694556000, 731],
+      [1694642400, 619],
+      [1694728800, 586],
+      [1694815200, 566],
+      [1694901600, 567],
+      [1694988000, 659],
+      [1695074400, 530],
+      [1695160800, 530],
+      [1695247200, 170],
+      [1695333600, 567],
+      [1695420000, 597],
+      [1695506400, 468],
+      [1695592800, 575],
+      [1695679200, 0],
+      [1695765600, 496],
+      [1695852000, 472],
+      [1695938400, 540],
+      [1696024800, 495],
+ ]
+    }
+  ]
+}).render()
+
+
+
+
+
+  // inTemp + inHumidity
+  
+
+
+new ApexCharts(document.querySelector('#inTempchart'), {
+  ...graph_area_config,
+  yaxis: {
+    labels: {
+      formatter: function (val) {
+        return formatNumber(val, "%.1f") + "°C";
+      }
+    }
+  },
+  series: [
+    {
+      name: "Innentemperatur",
+      data: [       [1693519200, 22.3],
+      [1693605600, 23.0],
+      [1693692000, 22.8],
+      [1693778400, 23.2],
+      [1693864800, 23.4],
+      [1693951200, 24.5],
+      [1694037600, 25.0],
+      [1694124000, 26.1],
+      [1694210400, 26.6],
+      [1694296800, 26.8],
+      [1694383200, 26.7],
+      [1694469600, 25.6],
+      [1694556000, 23.7],
+      [1694642400, 24.2],
+      [1694728800, 23.2],
+      [1694815200, 23.8],
+      [1694901600, 24.4],
+      [1694988000, 24.7],
+      [1695074400, 23.7],
+      [1695160800, 23.8],
+      [1695247200, 23.8],
+      [1695333600, 23.2],
+      [1695420000, 22.7],
+      [1695506400, 22.5],
+      [1695592800, 22.5],
+      [1695679200, 22.6],
+      [1695765600, 22.9],
+      [1695852000, 23.2],
+      [1695938400, 23.2],
+      [1696024800, 22.6],
+ ]
+    }
+  ]
+}).render()
+
+
+
+
+  
+
+
+new ApexCharts(document.querySelector('#inHumiditychart'), {
+  ...graph_area_config,
+  yaxis: {
+    labels: {
+      formatter: function (val) {
+        return formatNumber(val, "%.0f") + "%";
+      }
+    }
+  },
+  series: [
+    {
+      name: "Luftfeuchtigkeit Innen",
+      data: [       [1693519200, 62],
+      [1693605600, 65],
+      [1693692000, 63],
+      [1693778400, 58],
+      [1693864800, 53],
+      [1693951200, 54],
+      [1694037600, 55],
+      [1694124000, 55],
+      [1694210400, 58],
+      [1694296800, 59],
+      [1694383200, 56],
+      [1694469600, 61],
+      [1694556000, 64],
+      [1694642400, 59],
+      [1694728800, 55],
+      [1694815200, 59],
+      [1694901600, 63],
+      [1694988000, 61],
+      [1695074400, 54],
+      [1695160800, 56],
+      [1695247200, 59],
+      [1695333600, 59],
+      [1695420000, 57],
+      [1695506400, 58],
+      [1695592800, 57],
+      [1695679200, 56],
+      [1695765600, 57],
+      [1695852000, 56],
+      [1695938400, 57],
+      [1696024800, 57],
+ ]
+    }
+  ]
+}).render()
+
+
+
+
+  
+  // Other sensors
+
+
+
+
+  
+
+
+
+
+  
+
+
+new ApexCharts(document.querySelector('#cloudbasechart'), {
+  ...graph_area_config,
+  yaxis: {
+    labels: {
+      formatter: function (val) {
+        return formatNumber(val, "%.0f") + " meters";
+      }
+    }
+  },
+  series: [
+    {
+      name: "Wolkenuntergrenze",
+      data: [       [1693519200, 530],
+      [1693605600, 563],
+      [1693692000, 712],
+      [1693778400, 1108],
+      [1693864800, 1582],
+      [1693951200, 1519],
+      [1694037600, 1406],
+      [1694124000, 1382],
+      [1694210400, 1266],
+      [1694296800, 1308],
+      [1694383200, 1372],
+      [1694469600, 711],
+      [1694556000, 545],
+      [1694642400, 720],
+      [1694728800, 1027],
+      [1694815200, 952],
+      [1694901600, 807],
+      [1694988000, 868],
+      [1695074400, 918],
+      [1695160800, 954],
+      [1695247200, 758],
+      [1695333600, 782],
+      [1695420000, 742],
+      [1695506400, 1000],
+      [1695592800, 1209],
+      [1695679200, 1020],
+      [1695765600, 1325],
+      [1695852000, 951],
+      [1695938400, 722],
+      [1696024800, 750],
+ ]
+    }
+  ]
+}).render()
+
+
+
+
+
+  // Build wind vector chart
+  var vector_data = {
+    'N': {'sum': 0.0, 'amt': 0, 'avg': 0.0, 'max': 0.0},
+    'NE': {'sum': 0.0, 'amt': 0, 'avg': 0.0, 'max': 0.0},
+    'E': {'sum': 0.0, 'amt': 0, 'avg': 0.0, 'max': 0.0},
+    'SE': {'sum': 0.0, 'amt': 0, 'avg': 0.0, 'max': 0.0},
+    'S': {'sum': 0.0, 'amt': 0, 'avg': 0.0, 'max': 0.0},
+    'SW': {'sum': 0.0, 'amt': 0, 'avg': 0.0, 'max': 0.0},
+    'W': {'sum': 0.0, 'amt': 0, 'avg': 0.0, 'max': 0.0},
+    'NW': {'sum': 0.0, 'amt': 0, 'avg': 0.0, 'max': 0.0},
+  };
+
+  var raw_data = [
+  {
+    'dir': "225.39307399420804",
+    'speed': "5.202090310668616",
+    'max': "25.560063529148596"
+  },
+  {
+    'dir': "190.70599880788603",
+    'speed': "5.699495633694449",
+    'max': "18.360045633613783"
+  },
+  {
+    'dir': "145.1651437243267",
+    'speed': "2.1854101937085124",
+    'max': "11.160027738078966"
+  },
+  {
+    'dir': "168.37410126302572",
+    'speed': "5.797318617134256",
+    'max': "21.96005458138119"
+  },
+  {
+    'dir': "165.91467126049403",
+    'speed': "6.187408235851786",
+    'max': "23.760059055264893"
+  },
+  {
+    'dir': "160.45337142296262",
+    'speed': "4.720495249202561",
+    'max': "20.160050107497486"
+  },
+  {
+    'dir': "170.47849398252063",
+    'speed': "5.636201166482101",
+    'max': "21.96005458138119"
+  },
+  {
+    'dir': "165.23841565418402",
+    'speed': "4.85160729669128",
+    'max': "20.160050107497486"
+  },
+  {
+    'dir': "162.44691649652356",
+    'speed': "4.007898008216687",
+    'max': "14.760036685846371"
+  },
+  {
+    'dir': "165.25262465735796",
+    'speed': "3.9455255960174593",
+    'max': "14.760036685846371"
+  },
+  {
+    'dir': "144.9223780548742",
+    'speed': "5.768106244632124",
+    'max': "23.760059055264893"
+  },
+  {
+    'dir': "100.68476548379726",
+    'speed': "2.383327352295262",
+    'max': "36.720091267227566"
+  },
+  {
+    'dir': "208.80104667824926",
+    'speed': "5.018220806044716",
+    'max': "27.720068897809043"
+  },
+  {
+    'dir': "167.7678638965153",
+    'speed': "3.2633473967145368",
+    'max': "14.760036685846371"
+  },
+  {
+    'dir': "213.38651865299929",
+    'speed': "6.4238195377341905",
+    'max': "20.160050107497486"
+  },
+  {
+    'dir': "180.2050040193379",
+    'speed': "3.6025208587726283",
+    'max': "16.560041159730076"
+  },
+  {
+    'dir': "205.24833643342228",
+    'speed': "4.621434105551696",
+    'max': "23.760059055264893"
+  },
+  {
+    'dir': "236.23685744197337",
+    'speed': "8.527062860551528",
+    'max': "34.92008679334386"
+  },
+  {
+    'dir': "264.01771792772774",
+    'speed': "9.960965234017854",
+    'max': "43.92010916276238"
+  },
+  {
+    'dir': "210.50224758393855",
+    'speed': "6.46564702264815",
+    'max': "34.92008679334386"
+  },
+  {
+    'dir': "176.35110286151587",
+    'speed': "4.071707581796459",
+    'max': "25.560063529148596"
+  },
+  {
+    'dir': "245.95104401761427",
+    'speed': "7.771640837630738",
+    'max': "31.32007784557645"
+  },
+  {
+    'dir': "270.1969566503097",
+    'speed': "7.409196986874833",
+    'max': "29.520073371692742"
+  },
+  {
+    'dir': "212.85256708915568",
+    'speed': "5.37405279165017",
+    'max': "20.160050107497486"
+  },
+  {
+    'dir': "179.7591044366269",
+    'speed': "5.075959044790323",
+    'max': "25.560063529148596"
+  },
+  {
+    'dir': "248.01854783241774",
+    'speed': "8.653887055322958",
+    'max': "16.560041159730076"
+  },
+  {
+    'dir': "207.96910083027115",
+    'speed': "4.950438722043345",
+    'max': "25.560063529148596"
+  },
+  {
+    'dir': "221.7048200672768",
+    'speed': "4.984101673623078",
+    'max': "31.32007784557645"
+  },
+  {
+    'dir': "200.3333387331423",
+    'speed': "6.483361352391134",
+    'max': "33.12008231946015"
+  },
+  {
+    'dir': "199.13050049254343",
+    'speed': "3.265633116681373",
+    'max': "12.960032211962668"
+  },
+  ];
+
+  raw_data.forEach(function(item) {
+    var vec_dir = parseInt(item.dir);
+    var vec_speed = parseFloat(item.speed);
+    var max_speed = parseFloat(item.max);
+
+    if(typeof vec_dir === 'number') {
+      var vec_key = false;
+
+      // Detect key based on vec direction (0-360). 45° steps, using the middle +- 45/2=22.5
+      if(vec_dir > 337.5 || vec_dir <= 22.5) {
+        vec_key = 'N';
+      }
+      if(vec_dir > 22.5 && vec_dir <= 67.5) {
+        vec_key = 'NE';
+      }
+      if(vec_dir > 67.5 && vec_dir <= 112.5) {
+        vec_key = 'E';
+      }
+      if(vec_dir > 112.5 && vec_dir <= 157.5) {
+        vec_key = 'SE';
+      }
+      if(vec_dir > 157.5 && vec_dir <= 202.5) {
+        vec_key = 'S';
+      }
+      if(vec_dir > 202.5 && vec_dir <= 247.5) {
+        vec_key = 'SW';
+      }
+      if(vec_dir > 247.5 && vec_dir <= 292.5) {
+        vec_key = 'W';
+      }
+      if(vec_dir > 292.5 && vec_dir <= 337.5) {
+        vec_key = 'NW';
+      }
+
+      if(vec_key !== false) {
+        vector_data[vec_key]['sum'] += vec_speed;
+        vector_data[vec_key]['amt']++;
+
+        if(max_speed > vector_data[vec_key]['max']) {
+          vector_data[vec_key]['max'] = max_speed;
+        }
+      }
+
+    }
+  });
+
+  // Finally build arrays for chart
+  var avg_values = [];
+  var max_values = [];
+  Object.keys(vector_data).forEach(function (item) {
+    if(vector_data[item]['amt'] > 0) {
+      avg_values.push(vector_data[item]['sum'] / vector_data[item]['amt']);
+    } else {
+      avg_values.push(0);
+    }
+
+    max_values.push(vector_data[item]['max'])
+  });
+
+  // Display wind vector chart
+
+  new ApexCharts(document.querySelector('#windvecchart'), {
+    ...graph_radar_config,
+    yaxis: {
+      labels: {
+        formatter: function (val) {
+          return formatNumber(val, "%.0f") + " km/h";
+        }
+      }
+    },
+    series: [
+      {
+        name: "Windgeschwindigkeit",
+        data: avg_values
+      },
+      {
+        name: "Böengeschwindigkeit",
+        data: max_values
+      },
+    ]
+  }).render()
+
+  // extraTemp 1-8
+
+  
+
+
+new ApexCharts(document.querySelector('#extraTemp1chart'), {
+  ...graph_area_config,
+  yaxis: {
+    labels: {
+      formatter: function (val) {
+        return formatNumber(val, "%.1f") + "°C";
+      }
+    }
+  },
+  series: [
+    {
+      name: "Außentemperatur Nordseite",
+      data: [       [1693519200, 17.0],
+      [1693605600, 18.0],
+      [1693692000, 18.6],
+      [1693778400, 19.3],
+      [1693864800, 22.6],
+      [1693951200, 23.2],
+      [1694037600, 22.6],
+      [1694124000, 23.5],
+      [1694210400, 24.7],
+      [1694296800, 24.7],
+      [1694383200, 25.1],
+      [1694469600, 21.3],
+      [1694556000, 18.7],
+      [1694642400, 16.0],
+      [1694728800, 17.5],
+      [1694815200, 19.9],
+      [1694901600, 21.4],
+      [1694988000, 20.3],
+      [1695074400, 17.1],
+      [1695160800, 18.5],
+      [1695247200, 17.7],
+      [1695333600, 15.1],
+      [1695420000, 13.8],
+      [1695506400, 14.0],
+      [1695592800, 15.5],
+      [1695679200, 14.6],
+      [1695765600, 20.3],
+      [1695852000, 19.8],
+      [1695938400, 19.2],
+      [1696024800, 14.7],
+ ]
+    }
+  ]
+}).render()
+
+
+
+
+
+  
+
+
+new ApexCharts(document.querySelector('#extraTemp2chart'), {
+  ...graph_area_config,
+  yaxis: {
+    labels: {
+      formatter: function (val) {
+        return formatNumber(val, "%.1f") + "°C";
+      }
+    }
+  },
+  series: [
+    {
+      name: "Temperature2",
+      data: [       [1693519200, 20.6],
+      [1693605600, 21.1],
+      [1693692000, 22.0],
+      [1693778400, 22.5],
+      [1693864800, 23.8],
+      [1693951200, 25.2],
+      [1694037600, 25.7],
+      [1694124000, 26.1],
+      [1694210400, 27.0],
+      [1694296800, 27.4],
+      [1694383200, 27.6],
+      [1694469600, 27.2],
+      [1694556000, 25.1],
+      [1694642400, 23.6],
+      [1694728800, 23.1],
+      [1694815200, 23.7],
+      [1694901600, 24.3],
+      [1694988000, 24.5],
+      [1695074400, 23.4],
+      [1695160800, 22.6],
+      [1695247200, 22.3],
+      [1695333600, 21.8],
+      [1695420000, 20.7],
+      [1695506400, 20.2],
+      [1695592800, 21.0],
+      [1695679200, 21.6],
+      [1695765600, 22.9],
+      [1695852000, 23.1],
+      [1695938400, 22.9],
+      [1696024800, 22.1],
+ ]
+    }
+  ]
+}).render()
+
+
+
+
+
+  
+
+
+new ApexCharts(document.querySelector('#extraTemp3chart'), {
+  ...graph_area_config,
+  yaxis: {
+    labels: {
+      formatter: function (val) {
+        return formatNumber(val, "%.1f") + "°C";
+      }
+    }
+  },
+  series: [
+    {
+      name: "Temperature3",
+      data: [       [1693519200, 18.3],
+      [1693605600, 19.1],
+      [1693692000, 19.7],
+      [1693778400, 20.0],
+      [1693864800, 21.1],
+      [1693951200, 22.5],
+      [1694037600, 22.9],
+      [1694124000, 23.6],
+      [1694210400, 24.0],
+      [1694296800, 24.4],
+      [1694383200, 25.0],
+      [1694469600, 24.7],
+      [1694556000, 23.0],
+      [1694642400, 21.1],
+      [1694728800, 20.6],
+      [1694815200, 20.7],
+      [1694901600, 21.4],
+      [1694988000, 21.9],
+      [1695074400, 20.9],
+      [1695160800, 20.4],
+      [1695247200, 20.2],
+      [1695333600, 19.2],
+      [1695420000, 18.3],
+      [1695506400, 17.6],
+      [1695592800, 17.7],
+      [1695679200, 18.3],
+      [1695765600, 19.4],
+      [1695852000, 20.1],
+      [1695938400, 20.5],
+      [1696024800, 19.6],
+ ]
+    }
+  ]
+}).render()
+
+
+
+
+
+
+
+
+
+
+  // extraHumid 1-8
+
+  
+
+
+new ApexCharts(document.querySelector('#extraHumid1chart'), {
+  ...graph_area_config,
+  yaxis: {
+    labels: {
+      formatter: function (val) {
+        return formatNumber(val, "%.0f") + "%";
+      }
+    }
+  },
+  series: [
+    {
+      name: "Luftfeuchtigkeit Nordseite",
+      data: [       [1693519200, 83],
+      [1693605600, 84],
+      [1693692000, 77],
+      [1693778400, 68],
+      [1693864800, 54],
+      [1693951200, 53],
+      [1694037600, 58],
+      [1694124000, 60],
+      [1694210400, 64],
+      [1694296800, 63],
+      [1694383200, 60],
+      [1694469600, 74],
+      [1694556000, 80],
+      [1694642400, 77],
+      [1694728800, 68],
+      [1694815200, 71],
+      [1694901600, 76],
+      [1694988000, 74],
+      [1695074400, 70],
+      [1695160800, 70],
+      [1695247200, 75],
+      [1695333600, 74],
+      [1695420000, 75],
+      [1695506400, 70],
+      [1695592800, 63],
+      [1695679200, 69],
+      [1695765600, 60],
+      [1695852000, 69],
+      [1695938400, 76],
+      [1696024800, 77],
+ ]
+    }
+  ]
+}).render()
+
+
+
+
+
+  
+
+
+new ApexCharts(document.querySelector('#extraHumid2chart'), {
+  ...graph_area_config,
+  yaxis: {
+    labels: {
+      formatter: function (val) {
+        return formatNumber(val, "%.0f") + "%";
+      }
+    }
+  },
+  series: [
+    {
+      name: "extraHumid2",
+      data: [       [1693519200, 59],
+      [1693605600, 62],
+      [1693692000, 61],
+      [1693778400, 60],
+      [1693864800, 56],
+      [1693951200, 57],
+      [1694037600, 56],
+      [1694124000, 55],
+      [1694210400, 57],
+      [1694296800, 56],
+      [1694383200, 55],
+      [1694469600, 57],
+      [1694556000, 58],
+      [1694642400, 55],
+      [1694728800, 53],
+      [1694815200, 55],
+      [1694901600, 58],
+      [1694988000, 58],
+      [1695074400, 53],
+      [1695160800, 55],
+      [1695247200, 58],
+      [1695333600, 54],
+      [1695420000, 53],
+      [1695506400, 52],
+      [1695592800, 50],
+      [1695679200, 51],
+      [1695765600, 51],
+      [1695852000, 53],
+      [1695938400, 56],
+      [1696024800, 55],
+ ]
+    }
+  ]
+}).render()
+
+
+
+
+
+  
+
+
+new ApexCharts(document.querySelector('#extraHumid3chart'), {
+  ...graph_area_config,
+  yaxis: {
+    labels: {
+      formatter: function (val) {
+        return formatNumber(val, "%.0f") + "%";
+      }
+    }
+  },
+  series: [
+    {
+      name: "extraHumid3",
+      data: [       [1693519200, 67],
+      [1693605600, 68],
+      [1693692000, 69],
+      [1693778400, 69],
+      [1693864800, 69],
+      [1693951200, 70],
+      [1694037600, 69],
+      [1694124000, 67],
+      [1694210400, 69],
+      [1694296800, 68],
+      [1694383200, 68],
+      [1694469600, 68],
+      [1694556000, 65],
+      [1694642400, 63],
+      [1694728800, 61],
+      [1694815200, 63],
+      [1694901600, 65],
+      [1694988000, 66],
+      [1695074400, 62],
+      [1695160800, 64],
+      [1695247200, 66],
+      [1695333600, 63],
+      [1695420000, 61],
+      [1695506400, 60],
+      [1695592800, 60],
+      [1695679200, 61],
+      [1695765600, 61],
+      [1695852000, 62],
+      [1695938400, 64],
+      [1696024800, 63],
+ ]
+    }
+  ]
+}).render()
+
+
+
+
+
+
+
+
+
+
+</script>
+
+</body>
+</html>

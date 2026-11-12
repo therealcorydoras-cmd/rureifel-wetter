@@ -1,0 +1,46 @@
+                   MONTHLY CLIMATOLOGICAL SUMMARY for Nov 2016
+
+
+NAME: Strass,NRW,Deutschland
+ELEV: 247 meters    LAT: 50-44.32 N    LONG: 006-25.87 O
+
+
+                   TEMPERATURE (°C), RAIN (mm), WIND SPEED (km/h)
+
+                                         HEAT   COOL         AVG
+      MEAN                               DEG    DEG          WIND                   DOM
+DAY   TEMP   HIGH   TIME    LOW   TIME   DAYS   DAYS   RAIN  SPEED   HIGH   TIME    DIR
+---------------------------------------------------------------------------------------
+ 01
+ 02
+ 03
+ 04
+ 05
+ 06
+ 07
+ 08
+ 09
+ 10
+ 11
+ 12
+ 13
+ 14
+ 15
+ 16
+ 17
+ 18
+ 19
+ 20
+ 21
+ 22
+ 23
+ 24
+ 25
+ 26
+ 27
+ 28
+ 29
+ 30   11.7   25.9  14:24    3.3  21:36    6.7    0.0   44.1    N/A    N/A    N/A    N/A
+---------------------------------------------------------------------------------------
+      11.7   25.9     30    3.3     30    6.7    0.0   44.1    N/A    N/A       N/A    N/A
+

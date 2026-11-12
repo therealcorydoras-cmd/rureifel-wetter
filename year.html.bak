@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="profile" href="http://gmpg.org/xfn/11" />
+        
+        <title>H&#252;rtgenwald-Stra&#223;,NRW,Deutschland Yearly Weather Summary</title>
+        
+        <!-- Open Graph -->
+        <meta property="og:site_name" content="H&#252;rtgenwald-Stra&#223;,NRW,Deutschland Yearly Weather Summary" />
+        <meta property="og:description" content="Yearly Weather Summary from H&#252;rtgenwald-Stra&#223;,NRW,Deutschland - weather web site powered by weewx" />
+		<meta property="og:type" content="website" /> 
+
+        <!-- Icons -->
+        <link rel="icon" href="favicon.ico" type="image/png">
+		<link rel="apple-touch-icon" href="touch-icon.png"/>
+        
+        <!-- Styles -->
+        <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+		<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/main.css">
+        
+        <!-- Skripte -->
+        <script src="js/modernizr-2.6.2.min.js"></script>
+        
+        <script type="text/javascript">
+            function openNoaaFile(date)
+            {
+                var url = "NOAA/NOAA-";
+                url = url + date;
+                url = url + ".txt";
+                if(date !== "Monthly summary" && date !== "Yearly summary") {
+                    window.location=url;
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <header>
+            <div class="container-fix" >
+                <div class="h-left" >
+                <h1><i class="fa fa-cloud" ></i> H&#252;rtgenwald-Stra&#223;,NRW,Deutschland</h1>
+                <p>50&deg; 44.32' N | 006&deg; 25.87' E | 247 meter | <a href="https://www.google.com/maps/?q=H&#252;rtgenwald-Stra&#223;,NRW,Deutschland" target="_blank" ><i class="fa fa-map-marker" ></i> Show on map</a></p>
+                <h2>Yearly Weather Summary</h2>
+                <p><i class="fa fa-clock-o" ></i> 27/12/16 08:10:00</p>
+                </div>
+                
+                <div class="h-right" >
+                    <table>
+                        <tr><td><b>Station:</b></td><td>TFA Nexus</td></tr>
+                        <tr><td><b>Software:</b></td><td><a href="http://weewx.com/" target="_blank" >weewx v3.6.2</a></td></tr>
+                        <tr><td><b>Weewx uptime:</b></td><td>0 Tage, 0 Stunden, 7 Minuten</td></tr>
+                        <tr><td><b>Server uptime:</b></td><td>21 Tage, 0 Stunden, 41 Minuten</td></tr>
+                    </table>
+                </div>
+
+                <nav>
+                    <ul>
+                        <li><a href="index.html" >Current</a></li>
+                        <li><a href="week.html" >Week</a></li>
+                        <li><a href="month.html" >Month</a></li>
+                        <li class="active" ><a href="year.html" >Year</a></li>
+                        <li><a href="RSS/weewx_rss.xml" >RSS</a></li>
+                        <li><select name="noaaselect" onchange="openNoaaFile(value)">
+                                <option>Monthly summary</option>
+                                    <option value="2016-11">2016-11</option>
+                                    <option value="2016-12">2016-12</option>
+                            </select></li>
+                        <li><select name="noaaselect" onchange="openNoaaFile(value)">
+                                <option>Yearly summary</option>
+                                    <option value="2016">2016</option>
+                            </select></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        
+        <div class="main" >
+        <div class="container" >
+            
+            <div class="left" >
+                
+                <div class="card" >
+                    <h1><i class="fa fa-calendar-o m-rot" ></i> Calendar Year</h1>
+                    <table class="tablespacer">
+                        <tr><td>High Temperature</td><td>25.9&#176;C</td><td>30/11/16 14:24:00</td></tr>
+                        <tr><td>Low Temperature</td><td>-3.1&#176;C</td><td>05/12/16 03:10:00</td></tr>
+                        <tr><td>High Heat Index</td><td>25.9&#176;C</td><td>30/11/16 14:24:00</td></tr>
+                        <tr><td>Low Wind Chill</td><td>-6.1&#176;C</td><td>20/12/16 04:08:32</td></tr>
+                        <tr><td>High Dewpoint</td><td>11.6&#176;C</td><td>30/11/16 14:24:00</td></tr>
+                        <tr><td>Low Dewpoint</td><td>-6.1&#176;C</td><td>05/12/16 02:22:43</td></tr>
+                        <tr><td>High Humidity</td><td>96%</td><td>03/12/16 05:47:00</td></tr>
+                        <tr><td>Low Humidity</td><td>35%</td><td>08/12/16 06:51:36</td></tr>
+                        <tr><td>High Barometer</td><td>1036 mbar</td><td>17/12/16 22:35:00</td></tr>
+                        <tr><td>Low Barometer</td><td>985 mbar</td><td>11/12/16 03:35:00</td></tr>
+                        <tr><td>High Wind Speed</td><td>48 km/h 225&#176;</td><td>25/12/16 17:32:32</td></tr>
+                        <tr><td>Average Wind</td><td>5 km/h</td><td></td></tr>
+                        <tr><td>RMS Wind</td><td>7 km/h</td><td></td></tr>
+                        <tr><td>Vector Average Speed</td><td>4 km/h</td><td></td></tr>
+                        <tr><td>Vector Average Direction</td><td>214&#176;</td><td></td></tr>
+                        <tr><td>High Inside Temperature</td><td>24.7&#176;C</td><td>05/12/16 15:09:09</td></tr>
+                        <tr><td>Low Inside Temperature</td><td>17.4&#176;C</td><td>23/12/16 08:56:37</td></tr>
+                        <tr><td>High Pond Temp</td><td>18.8&#176;C</td><td>09/12/16 14:12:07</td></tr>
+                        <tr><td>Low Pond Temp</td><td>-3.7&#176;C</td><td>05/12/16 02:48:38</td></tr>
+                    </table>
+                </div>
+
+                <div class="card" >
+                    <h1><i class="fa fa-cloud m-blau" ></i> Rain Year (1-Jan start)</h1>
+                    <table class="tablespacer">
+                        <tr><td>Rain Year Total</td><td>87.5 mm</td><td></td></tr>
+                        <tr><td>High Rain Rate</td><td>168.4 mm/h</td><td>30/11/16 17:24:00</td></tr>
+                    </table>
+                </div>
+
+            </div>
+            
+            <div class="right" >
+
+                <div class="card cc graphs" >
+                    <h1><i class="fa fa-line-chart m-gruen" ></i> Yearly Statistics and Plots</h1>
+                    
+                    <img src="yeartempdew.png" alt="temperatures" />
+                    <img src="yeartempchill.png" alt="heatchill" />
+                    <img src="yearhilow.png" alt="Daily highs and lows for the year" title="Daily highs and lows for the year"/>
+                    <img src="yearrain.png" alt="rain" />
+                    <img src="yearwind.png" alt="wind" />
+                    <img src="yearbarometer.png" alt="barometer"/>
+                    <img src="yearwinddir.png" alt="Hi Wind" />
+                    <img src="yearinside.png" alt="Inside" />
+                    <img src="yearwindvec.png" alt="Wind Vector" />
+                    <img src="yearpond.png" alt="Pond Temperatures" />
+                </div>
+                
+            </div>
+        </div>
+        </div>
+        
+        <footer>
+            <div class="container-fix" >
+            All rights reserved. &copy; 2014 
+            Sven
+            &sdot; Design by <a href="http://blauesledersofa.de" >blaues Ledersofa</a>
+            &sdot; Powered by <a href="http://weewx.com/" target="_blank" >weewx</a>
+            </div>
+        </footer>
+
+    </body>
+</html>
+

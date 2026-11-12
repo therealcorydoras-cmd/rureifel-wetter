@@ -1,0 +1,350 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<head>
+  <title>Forecast Sampler: Strip</title>
+  <link rel='stylesheet' type='text/css' href='forecast.css'/>
+  <link rel='stylesheet' type='text/css' href='forecast_strip.css' />
+</head>
+<body>
+
+
+<h1>Forecast Strip</h1>
+<p>
+Display forecast data in strip format by including the forecast_strip.inc
+template.  Specify forecast_strip_settings using Cheetah syntax, then include
+the template.
+</p>
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+var forecast_data = {};
+
+function populate_strip(div_id, data_id) {
+  if(! forecast_data[data_id]) return;
+  var e = document.getElementById(div_id);
+  if(! e) return;
+  e.innerHTML = '';
+  var tbl = document.createElement('table');
+  tbl.appendChild(create_tr(forecast_data[data_id].date));
+  tbl.appendChild(create_tr(forecast_data[data_id].hour));
+  tbl.appendChild(create_tr(forecast_data[data_id].tempMax));
+  tbl.appendChild(create_tr(forecast_data[data_id].temp));
+  tbl.appendChild(create_tr(forecast_data[data_id].tempMin));
+  tbl.appendChild(create_tr(forecast_data[data_id].windSpeed));
+  tbl.appendChild(create_tr(forecast_data[data_id].windGust));
+  tbl.appendChild(create_tr(forecast_data[data_id].windDir));
+  tbl.appendChild(create_tr(forecast_data[data_id].clouds));
+  tbl.appendChild(create_tr(forecast_data[data_id].pop));
+  tbl.appendChild(create_tr(forecast_data[data_id].qpf));
+  tbl.appendChild(create_tr(forecast_data[data_id].qsf));
+  var d = document.createElement('div');
+  d.appendChild(tbl);
+  e.appendChild(d);
+  e.appendChild(create_summary(forecast_data[data_id].summary));
+}
+
+function create_tr(data) {
+  var tr = document.createElement('tr');
+  tr.className = data.className;
+  var th = document.createElement('th');
+  if(data.legend && data.legend != '') {
+    var img = document.createElement('img');
+    img.setAttribute('src', data.legend);
+    img.className = 'legend-img';
+    th.appendChild(img);
+  }
+  tr.appendChild(th);
+  th = document.createElement('th');
+  if(data.units != '') {
+    th.innerHTML = data.units;
+  }
+  tr.appendChild(th);
+  for(var i=0; i<data.values.length; i++) {
+    var td = document.createElement('td');
+    var v = data.values[i];
+    if(data.td_type == 'icon') {
+      if(v != '') {
+        var img = document.createElement('img');
+        img.setAttribute('src', 'icons/' + v + '.png')
+        td.appendChild(img);
+      }
+    } else if(data.td_type == 'txt') {
+      if((v == '0.00' || v == '0') && data.skip_zeros) {
+        ;
+      } else {
+        var n = document.createTextNode(v);
+        td.appendChild(n);
+        var bg = get_tint(v, data.className, data.units);
+        if(bg != '') {
+          td.style.background = bg;
+//          td.style.border = '1px solid #dddddd';
+        }
+      }
+    } else if(data.td_type == 'html') {
+      if(v.colspan) { td.colSpan = v.colspan; }
+      if(v.label) {
+        td.innerHTML = v.label;
+//      } else {
+//        td.innerHTML = v;
+      }
+    }
+    tr.appendChild(td);
+  }
+  return tr;
+}
+
+function create_summary(summary_data) {
+  var d = document.createElement('div');
+  d.className = 'sources';
+  var html = summary_data.source + " forecast";
+  if(summary_data.location != '') {
+    html += " for " + summary_data.location;
+  }
+  if(summary_data.issued_ts != '') {
+    html += " issued on " + summary_data.issued_ts;
+  }
+  html += "<br/>report generated in " + summary_data.elapsed + " s";
+  d.innerHTML = html;
+  return d;
+}
+
+function get_rgba(r, g, b, a) {
+  return 'rgba('+r+','+g+','+b+','+a+')';
+}
+
+// table of tint thresholds and limits
+// t_max;  maximum tint - anything over this is maximum high color
+// t_min;  minimum tint - anything under this is maximum low color
+// t_up;   upper threshold - start tinting when over this value
+// t_dn;   lower threshold - start tinting when below this value
+// the r,g,b values control the tint color
+var tint_limits = {
+  'pop': {'t_max': 100.0, 't_up': 30.0, // percent
+          'r': 0, 'g': 144, 'b': 200},
+  'qpf': {'t_max': 2.5, // cm
+          'r': 0, 'g': 120, 'b': 250},
+  'qsf': {'t_max': 15.0, // cm
+          'r': 120, 'g': 120, 'b': 250},
+  'wind': {'t_max': 65.0, // kph
+           'r': 255, 'g': 144, 'b': 0},
+  'temp': {'t_max': 45.0, 't_min': -30.0, 't_up': 15.0, 't_dn': 10.0, // C
+           'r_up': 200, 'g_up': 20, 'b_up': 20,
+           'r_dn': 60, 'g_dn': 60, 'b_dn': 250},
+  'humidity': {'t_max': 100.0, 't_up': 10.0, // percent
+               'r': 20, 'g': 120, 'b': 200},
+  'moonphase': {'t_max': 100.0, // percent
+                'r': 200, 'g': 200, 'b': 100}
+};
+
+function get_tint(v, class_name, units) {
+  if(v == '') return '';
+  if(units === undefined) units = '';
+  if(class_name == 'pop') {
+    var a = (v - tint_limits[class_name]['t_up']) /
+      (tint_limits[class_name]['t_max'] - tint_limits[class_name]['t_up']);
+    return get_rgba(tint_limits[class_name]['r'],
+                    tint_limits[class_name]['g'],
+                    tint_limits[class_name]['b'], a);
+  }
+  if(class_name == 'qpf') {
+    var d = v;
+    if(units.endsWith('in')) d = d * 2.54; // convert to cm
+    if(units.endsWith('mm')) d = d / 10.0; // convert to cm
+    var a = d / tint_limits[class_name]['t_max'];
+    return get_rgba(tint_limits[class_name]['r'],
+                    tint_limits[class_name]['g'],
+                    tint_limits[class_name]['b'], a);
+  }
+  if(class_name == 'qsf') {
+    var d = v;
+    if(units.endsWith('in')) d = d * 2.54; // convert to cm
+    if(units.endsWith('mm')) d = d / 10.0; // convert to cm
+    var a = d / tint_limits[class_name]['t_max'];
+    return get_rgba(tint_limits[class_name]['r'],
+                    tint_limits[class_name]['g'],
+                    tint_limits[class_name]['b'], a);
+  }
+  if(class_name == 'windSpeed' || class_name == 'windGust') {
+    class_name = 'wind';
+    var s = v;
+    if(units.endsWith('mph')) s = s * 1.60934; // convert to kph
+    var a = (s > tint_limits[class_name]['t_max']) ?
+      1.0 : s / tint_limits[class_name]['t_max'];
+    return get_rgba(tint_limits[class_name]['r'],
+                    tint_limits[class_name]['g'],
+                    tint_limits[class_name]['b'], a);
+  }
+  if(class_name.indexOf('temp') >= 0 || class_name == 'dewpoint') {
+    // blue for cold, red for warm, darker toward either end of spectrum
+    class_name = 'temp';
+    var c = v;
+    if(units.endsWith('F')) c = (v - 32.0) * 5.0 / 9.0; // convert to C
+    if(c > tint_limits[class_name]['t_up']) {
+      var a = (c > tint_limits[class_name]['t_max']) ?
+        1.0 : (c - tint_limits[class_name]['t_up']) /
+          (tint_limits[class_name]['t_max'] - tint_limits[class_name]['t_up']);
+      if(a > 0.8) { a = 0.8; }
+      return get_rgba(tint_limits[class_name]['r_up'],
+                      tint_limits[class_name]['g_up'],
+                      tint_limits[class_name]['b_up'], a);
+    } else if(c < tint_limits[class_name]['t_dn']) {
+      var a = (c < tint_limits[class_name]['t_min']) ?
+        1.0 : (c - tint_limits[class_name]['t_dn']) /
+          (tint_limits[class_name]['t_min'] - tint_limits[class_name]['t_dn']);
+      if(a > 0.8) { a = 0.8; }
+      return get_rgba(tint_limits[class_name]['r_dn'],
+                      tint_limits[class_name]['g_dn'],
+                      tint_limits[class_name]['b_dn'], a);
+    }
+  }
+  if(class_name == 'humidity') {
+    var a = (v - tint_limits[class_name]['t_up']) /
+      (tint_limits[class_name]['t_max'] - tint_limits[class_name]['t_up']);
+    a = (a - 0.5 < 0) ? 0 : a - 0.5;
+    return get_rgba(tint_limits[class_name]['r'],
+                    tint_limits[class_name]['g'],
+                    tint_limits[class_name]['b'], a);
+  }
+  if(class_name == 'moonphase') {
+    var a = v / tint_limits[class_name]['t_max'];
+    return get_rgba(tint_limits[class_name]['r'],
+                    tint_limits[class_name]['g'],
+                    tint_limits[class_name]['b'], a);
+  }
+  return '';
+}
+</script>
+
+
+
+
+<script>
+forecast_data.WU = {
+  'id': "WU",
+  'date': {
+    'className': 'date',
+    'units': '',
+    'td_type': 'html',
+    'values':[   ]},
+  'hour': {
+    'className': 'hour',
+    'units': '',
+    'td_type': 'txt',
+    'values':[   ]},
+  'tempMax': {
+    'className': 'temp',
+    'units': '&#176;F',
+    'td_type': 'txt',
+    'values':[   ]},
+  'tempMin': {
+    'className': 'temp',
+    'units': '&#176;F',
+    'td_type': 'txt',
+    'values':[   ]},
+  'temp': {
+    'className': 'temp',
+    'legend': 'icons/thermometer-red.png',
+    'units': '&#176;F',
+    'td_type': 'txt',
+    'values':[   ]},
+  'dewpoint': {
+    'className': 'dewpoint',
+    'legend': 'icons/thermometer-dewpoint.png',
+    'units': '&#176;F',
+    'td_type': 'txt',
+    'values':[   ]},
+  'humidity': {
+    'className': 'humidity',
+    'legend': 'icons/thermometer-blue.png',
+    'units': '%',
+    'td_type': 'txt',
+    'skip_zeros': true,
+    'values':[   ]},
+  'windSpeed': {
+    'className': 'windSpeed',
+    'legend': 'icons/flag.png',
+    'units': ' mph',
+    'td_type': 'txt',
+    'values':[   ]},
+  'windGust': {
+    'className': 'windGust',
+    'units': ' mph',
+    'td_type': 'txt',
+    'values':[   ]},
+  'windDir': {
+    'className': 'windDir',
+    'units': '',
+    'td_type': 'icon',
+    'values':[   ]},
+  'clouds': {
+    'className': 'clouds',
+    'units': '',
+    'td_type': 'icon',
+    'values':[   ]},
+  'pop': {
+    'className': 'pop',
+    'legend': 'icons/pop.png',
+    'units': '%',
+    'td_type': 'txt',
+    'skip_zeros': true,
+    'values':[   ]},
+  'qpf': {
+    'className': 'qpf',
+    'legend': 'icons/raindrop.png',
+    'units': ' in',
+    'td_type': 'txt',
+    'skip_zeros': true,
+    'values':[   ]},
+  'qsf': {
+    'className': 'qsf',
+    'legend': 'icons/snowflake.png',
+    'units': ' in',
+    'td_type': 'txt',
+    'skip_zeros': true,
+    'values':[   ]},
+  'sun': {
+    'className': 'sun',
+    'legend': 'icons/sunriseset.png',
+    'units': '',
+    'td_type': 'icon',
+    'values':[   ]},
+  'moon': {
+    'className': 'moon',
+    'legend': 'icons/moonriseset.png',
+    'units': '',
+    'td_type': 'icon',
+    'values':[   ]},
+  'moonphase': {
+    'className': 'moonphase',
+    'legend': 'icons/moonphase.png',
+    'units': '',
+    'td_type': 'txt',
+    'values':[   ]},
+  'summary': {
+    'source': "WU",
+    'location': "",
+    'issued_ts': "",
+    'elapsed': "0.029"
+  }
+};
+</script>
+
+<div id='wu_strip'></div>
+<script>
+populate_strip('wu_strip', 'WU');
+</script>
+
+
+</body>
+</html>
+

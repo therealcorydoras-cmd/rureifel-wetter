@@ -1,0 +1,136 @@
+<?xml version="1.0"?>
+<rss version="2.0" 
+     xmlns:content="http://purl.org/rss/1.0/modules/content/"
+     xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#" >
+   <channel>
+      <title>Strass,NRW,Deutschland, Weather Conditions</title>
+      <link></link>
+      <description>Current conditions, and daily, monthly, and yearly summaries</description>
+      <language>en-us</language>
+      <pubDate>Wed, 17 Nov 2021 07:45:00 CET</pubDate>
+
+      <lastBuildDate>Wed, 17 Nov 2021 07:45:00 CET</lastBuildDate>
+      <docs>http://blogs.law.harvard.edu/tech/rss</docs>
+      <generator>weewx 4.5.1</generator>
+      <ttl>5.000000 minutes</ttl>
+      
+      <item>
+         <title>Weather Conditions at 17/11/21 07:45:00</title>
+         <link></link>
+         <description>
+           Outside temperature: 5.5&#176;C; 
+           Barometer: 1018.6 mbar; 
+           Wind: 15 km/h from 197&#176;; 
+           Rain rate: 0.0 mm/h; 
+           Inside temperature: 20.8&#176;C
+         </description>
+         <pubDate>Wed, 17 Nov 2021 07:45:00 CET</pubDate>
+	     <geo:lat>50.738613</geo:lat>
+    	 <geo:long>6.431194</geo:long>
+ 		 <content:encoded><![CDATA[
+           <p>
+             Time:                17/11/21 07:45:00<br/>
+             Outside Temperature: 5.5&#176;C<br/>
+             Inside Temperature:  20.8&#176;C<br/>
+             Wind Chill:          2.9&#176;C<br/>
+             Heat Index:          4.4&#176;C<br/>
+             Dewpoint:            3.5&#176;C<br/>
+             Humidity:            87%<br/>
+             Barometer:           1018.6 mbar<br/>
+             Wind:                15 km/h from 197&#176;<br/>
+             Rain Rate:           0.0 mm/h<br/>
+        </p>
+      ]]></content:encoded>
+      </item>
+
+      <item>
+         <title>Daily Weather Summary as of 17/11/21 07:45:00</title>
+         <link></link>
+         <description>
+	        Min outside temperature: 4.5&#176;C at 01:17:39;
+         	Max outside temperature: 5.5&#176;C at 07:45:00;
+	        Min inside temperature:  20.7&#176;C at 01:35:00;
+	        Max inside temperature:  21.0&#176;C at 00:05:00;
+	        Min barometer:           1018.2 mbar at 04:09:53;
+	        Max barometer:           1019.2 mbar at 00:00:01;
+            Max wind :               20 km/h from 202&#176; at 06:37:46;
+            Rain today:              0.0 mm
+         </description>
+         <pubDate>Wed, 17 Nov 2021 07:45:00 CET</pubDate>
+	     <geo:lat>50.738613</geo:lat>
+    	 <geo:long>6.431194</geo:long>
+ 		 <content:encoded><![CDATA[
+           <p>
+             Day:                     17 Nov 2021<br/>
+	         Min Outside Temperature: 4.5&#176;C at 01:17:39<br/>
+	         Max Outside Temperature: 5.5&#176;C at 07:45:00<br/>
+	         Min Inside Temperature:  20.7&#176;C at 01:35:00<br/>
+	         Max Inside Temperature:  21.0&#176;C at 00:05:00<br/>
+	         Min Barometer:           1018.2 mbar at 04:09:53<br/>
+	         Max Barometer:           1019.2 mbar at 00:00:01<br/>
+             Max Wind :               20 km/h from 202&#176; at 06:37:46<br/>
+             Rain today:              0.0 mm<br/>
+        </p>
+      ]]></content:encoded>
+      </item>
+
+      <item>
+         <title>Monthly Weather Summary as of 17/11/21 07:45:00</title>
+         <link>/month.html</link>
+         <description>
+	        Min outside temperature: 0.7&#176;C at 12/11/21 06:45:37;
+         	Max outside temperature: 11.8&#176;C at 01/11/21 13:57:45;
+	        Min inside temperature:  20.4&#176;C at 03/11/21 01:21:46;
+	        Max inside temperature:  25.4&#176;C at 09/11/21 15:49:39;
+	        Min barometer:           998.9 mbar at 02/11/21 06:07:45;
+	        Max barometer:           1030.9 mbar at 09/11/21 15:09:44;
+            Max wind :               29 km/h from 180&#176; at 01/11/21 10:35:48;
+            Rain total for month:    28.2 mm
+         </description>
+         <pubDate>Wed, 17 Nov 2021 07:45:00 CET</pubDate>
+ 		 <content:encoded><![CDATA[
+           <p>
+             Month:                   November 2021<br/>
+	         Max Outside Temperature: 11.8&#176;C at 01/11/21 13:57:45<br/>
+	         Min Outside Temperature: 0.7&#176;C at 12/11/21 06:45:37<br/>
+	         Max Inside Temperature:  25.4&#176;C at 09/11/21 15:49:39<br/>
+	         Min Inside Temperature:  20.4&#176;C at 03/11/21 01:21:46<br/>
+	         Min Barometer:           998.9 mbar at 02/11/21 06:07:45<br/>
+	         Max Barometer:           1030.9 mbar at 09/11/21 15:09:44<br/>
+             Max Wind :               29 km/h from 180&#176; at 01/11/21 10:35:48<br/>
+             Rain total for month:    28.2 mm<br/>
+        </p>
+      ]]></content:encoded>
+      </item>
+
+      <item>
+         <title>Yearly Weather Summary as of 17/11/21 07:45:00</title>
+         <link>/year.html</link>
+         <description>
+	        Min outside temperature: -10.8&#176;C at 10/02/21 08:27:15;
+         	Max outside temperature: 32.3&#176;C at 17/06/21 14:43:49;
+	        Min inside temperature:  18.2&#176;C at 13/04/21 08:29:49;
+	        Max inside temperature:  32.6&#176;C at 18/06/21 17:41:44;
+	        Min barometer:           983.9 mbar at 22/01/21 02:05:18;
+	        Max barometer:           1042.8 mbar at 27/02/21 15:05:58;
+            Max wind :               56 km/h from    N/A at 21/01/21 03:19:18;
+            Rain total for year:     523.5 mm
+         </description>
+         <pubDate>Wed, 17 Nov 2021 07:45:00 CET</pubDate>
+ 		 <content:encoded><![CDATA[
+           <p>
+             Year:                    2021<br/>
+	         Max Outside Temperature: 32.3&#176;C at 17/06/21 14:43:49<br/>
+	         Min Outside Temperature: -10.8&#176;C at 10/02/21 08:27:15<br/>
+	         Max Inside Temperature:  32.6&#176;C at 18/06/21 17:41:44<br/>
+	         Min Inside Temperature:  18.2&#176;C at 13/04/21 08:29:49<br/>
+	         Min Barometer:           983.9 mbar at 22/01/21 02:05:18<br/>
+	         Max Barometer:           1042.8 mbar at 27/02/21 15:05:58<br/>
+             Max Wind :               56 km/h from    N/A at 21/01/21 03:19:18<br/>
+             Rain total for year:     523.5 mm<br/>
+        </p>
+      ]]></content:encoded>
+      </item>
+
+   </channel>
+</rss>

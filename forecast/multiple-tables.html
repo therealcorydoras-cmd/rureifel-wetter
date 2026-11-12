@@ -1,0 +1,129 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<head>
+  <title>Forecast Sampler: Multiple Tables</title>
+  <link rel='stylesheet' type='text/css' href='forecast.css'/>
+  <link rel='stylesheet' type='text/css' href='forecast_table.css' />
+</head>
+<body>
+
+<h1>Forecast Table</h1>
+<p>
+Display forecast data in multiple tables, one table for each forecast source.
+</p>
+
+
+<h2>Weather Underground</h2>
+
+
+
+
+
+
+
+
+
+
+<script type='text/javascript'>
+function toggle_hours(control, id) {
+  elem = document.getElementById(id + '.hours');
+  if(elem) {
+    if(elem.style.display != 'none') {
+      elem.style.display = 'none';
+    } else {
+      elem.style.display = 'inline';
+    }
+  }
+}
+</script>
+
+
+
+
+<div class='forecast'>
+
+
+
+<p>No data for forecast WU</p>
+
+
+
+  <div class='sources'>
+    <p>
+      WU forecast
+     <br/>report generated in 0.028 s
+    </p>
+  </div>
+
+</div>
+
+
+<h2>NWS</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class='forecast'>
+
+
+
+<p>No data for forecast NWS</p>
+
+
+
+  <div class='sources'>
+    <p>
+      NWS forecast
+     <br/>report generated in 0.028 s
+    </p>
+  </div>
+
+</div>
+
+
+<h2>Aeris</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class='forecast'>
+
+
+
+<p>No data for forecast Aeris</p>
+
+
+
+  <div class='sources'>
+    <p>
+      Aeris forecast
+     <br/>report generated in 0.028 s
+    </p>
+  </div>
+
+</div>
+
+
+</body>
+</html>
+

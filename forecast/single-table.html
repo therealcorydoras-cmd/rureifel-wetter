@@ -1,0 +1,64 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<head>
+  <title>Forecast Sampler: Table</title>
+  <link rel='stylesheet' type='text/css' href='forecast.css'/>
+  <link rel='stylesheet' type='text/css' href='forecast_table.css' />
+</head>
+<body>
+
+<h1>Forecast Table</h1>
+<p>
+Display forecast data in a table format by including the forecast_table.inc
+template.  Specify forecast_table_settings using Cheetah syntax, then include
+the template.
+</p>
+
+
+
+
+
+
+
+
+
+
+
+
+<script type='text/javascript'>
+function toggle_hours(control, id) {
+  elem = document.getElementById(id + '.hours');
+  if(elem) {
+    if(elem.style.display != 'none') {
+      elem.style.display = 'none';
+    } else {
+      elem.style.display = 'inline';
+    }
+  }
+}
+</script>
+
+
+
+
+<div class='forecast'>
+
+
+
+<p>No data for forecast WU</p>
+
+
+
+  <div class='sources'>
+    <p>
+      WU forecast
+     <br/>report generated in 0.028 s
+    </p>
+  </div>
+
+</div>
+
+
+</body>
+</html>
+

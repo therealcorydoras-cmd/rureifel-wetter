@@ -1,0 +1,952 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <title>Telemetrie | Strass,NRW,Deutschland</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+
+<meta name="description" content="rureifel-wetter.de">
+<meta name="keywords" content="['weather', 'weewx', 'neowx-material']">
+
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Wetter">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="application-name" content="Wetter | Strass,NRW,Deutschland">
+
+<meta name="application-name" content="Wetter | Strass,NRW,Deutschland">
+<meta name="msapplication-tooltip" content="Strass,NRW,Deutschland">
+<meta name="msapplication-starturl" content="/">
+
+<meta name="msapplication-tap-highlight" content="no">
+
+<link href="img/icon-16.ico" rel="shortcut icon" type="image/x-icon">
+<link href="img/icon-16.png" rel="icon" type="image/png" sizes="16x16">
+<link href="img/icon-32.png" rel="icon" type="image/png" sizes="32x32">
+<link href="img/icon-48.png" rel="icon" type="image/png" sizes="48x48">
+
+<link href="img/icon-180.png" rel="apple-touch-icon">
+<link href="img/icon-76.png" rel="apple-touch-icon" sizes="76x76">
+<link href="img/icon-120.png" rel="apple-touch-icon" sizes="120x120">
+<link href="img/icon-152.png" rel="apple-touch-icon" sizes="152x152">
+
+<link href="img/icon-192.png" rel="icon" sizes="192x192">
+<link href="img/icon-128.png" rel="icon" sizes="128x128">
+
+<link href="manifest.json" rel="manifest">
+
+<link rel="stylesheet" href="css/bootstrap.min.css">
+
+<link rel="stylesheet" href="css/style.min.css">
+
+<link rel="stylesheet" href="weather-icons/css/weather-icons.min.css">
+<link rel="stylesheet" href="weather-icons/css/weather-icons-wind.min.css">
+
+
+
+
+
+<link
+        rel="apple-touch-startup-image"
+        media="screen and (device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
+        href="img/splash/splash_1136x640.png"
+/>
+<link
+        rel="apple-touch-startup-image"
+        media="screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"
+        href="img/splash/splash_2436x1125.png"
+/>
+<link
+        rel="apple-touch-startup-image"
+        media="screen and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
+        href="img/splash/splash_1792x828.png"
+/>
+<link
+        rel="apple-touch-startup-image"
+        media="screen and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
+        href="img/splash/splash_828x1792.png"
+/>
+<link
+        rel="apple-touch-startup-image"
+        media="screen and (device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
+        href="img/splash/splash_1334x750.png"
+/>
+<link
+        rel="apple-touch-startup-image"
+        media="screen and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"
+        href="img/splash/splash_1242x2688.png"
+/>
+<link
+        rel="apple-touch-startup-image"
+        media="screen and (device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"
+        href="img/splash/splash_2208x1242.png"
+/>
+<link
+        rel="apple-touch-startup-image"
+        media="screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"
+        href="img/splash/splash_1125x2436.png"
+/>
+<link
+        rel="apple-touch-startup-image"
+        media="screen and (device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"
+        href="img/splash/splash_1242x2208.png"
+/>
+<link
+        rel="apple-touch-startup-image"
+        media="screen and (device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
+        href="img/splash/splash_2732x2048.png"
+/>
+<link
+        rel="apple-touch-startup-image"
+        media="screen and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"
+        href="img/splash/splash_2688x1242.png"
+/>
+<link
+        rel="apple-touch-startup-image"
+        media="screen and (device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
+        href="img/splash/splash_2224x1668.png"
+/>
+<link
+        rel="apple-touch-startup-image"
+        media="screen and (device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
+        href="img/splash/splash_750x1334.png"
+/>
+<link
+        rel="apple-touch-startup-image"
+        media="screen and (device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
+        href="img/splash/splash_2048x2732.png"
+/>
+<link
+        rel="apple-touch-startup-image"
+        media="screen and (device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
+        href="img/splash/splash_2388x1668.png"
+/>
+<link
+        rel="apple-touch-startup-image"
+        media="screen and (device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
+        href="img/splash/splash_1668x2224.png"
+/>
+<link
+        rel="apple-touch-startup-image"
+        media="screen and (device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
+        href="img/splash/splash_640x1136.png"
+/>
+<link
+        rel="apple-touch-startup-image"
+        media="screen and (device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
+        href="img/splash/splash_1668x2388.png"
+/>
+<link
+        rel="apple-touch-startup-image"
+        media="screen and (device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
+        href="img/splash/splash_2048x1536.png"
+/>
+<link
+        rel="apple-touch-startup-image"
+        media="screen and (device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
+        href="img/splash/splash_1536x2048.png"
+/>
+</head>
+<body class="auto-theme main-bg" ontouchstart="">
+
+<header>
+
+    <nav class="navbar navbar-expand-lg navbar-dark teal">
+        <span class="navbar-brand d-flex">
+            <a class="mr-2" href="index.html">
+                <img src="img/icon-alpha-1x.png" srcset="img/icon-alpha-1x.png 1x, img/icon-alpha-2x.png 2x" style="width: 4rem">
+            </a>
+            <span>
+                <strong>Strass,NRW,Deutschland</strong><br>
+                <span class="font-small">12/11/26 08:00:00</span>
+            </span>
+        </span>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="ml-3 collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto mr-auto">
+
+                    <li class="nav-item mr-3">
+                        <a class="nav-link" href="index.html">Aktuell</a>
+                    </li>
+
+                    <li class="nav-item mr-3">
+                        <a class="nav-link" href="yesterday.html">Gestern</a>
+                    </li>
+
+                    <li class="nav-item mr-3">
+                        <a class="nav-link" href="week.html">Woche</a>
+                    </li>
+
+                    <li class="nav-item mr-3">
+                        <a class="nav-link" href="month.html">Monat</a>
+                    </li>
+
+                    <li class="nav-item mr-3">
+                        <a class="nav-link" href="year.html">Jahr</a>
+                    </li>
+
+                    <li class="nav-item mr-3">
+                        <a class="nav-link" href="archive.html">Archiv</a>
+                    </li>
+
+                    <li class="nav-item mr-3">
+                        <a class="nav-link" href="almanac.html">Astronomie</a>
+                    </li>
+
+
+
+            </ul>
+        </div>
+
+            <ul class="navbar-nav nav-flex-icons" style="line-height: 1.75; padding-top: .5rem">
+                <li class="nav-item mr-4 text-white">
+                    <i class="wi wi-sunrise mr-1" style="opacity: .75"></i> 07:43:52 <br>
+                    <i class="wi wi-sunset mr-1" style="opacity: .75"></i> 16:52:21
+                </li>
+                <li class="nav-item mr-4 text-white" style="line-height: 1.75">
+                    <i class="wi wi-moonrise mr-1" style="opacity: .75"></i> 11:25:39 <br>
+                    <i class="wi wi-moonset mr-1" style="opacity: .75"></i> 18:20:26
+                </li>
+                <li class="nav-item mr-4 text-white text-center" style="line-height: 1.75" >
+                    <span title="Zunehmender Sichelmond" data-toggle="tooltip">
+                        <i class="wi wi-moon-waxing-crescent-4 mr-1" style="opacity: .75"></i>
+                        8%
+                    </span><br>
+                    <a href="almanac.html" class="text-white" style="opacity: .6">
+                        Mehr
+                    </a>
+                </li>
+            </ul>
+    </nav>
+
+</header>
+<main>
+
+  <div class="container">
+
+    <div class="row my-4 align-content-start">
+
+      <div class="col-12 mb-4 text-center">
+        <h2 class="h2-responsive text-dark">Telemetrie</h2>
+      </div>
+
+      
+      <div class="col-12 col-lg-6 mb-4">
+  <div class="card">
+    <div class="card-body text-center">
+      <h5 class="h5-responsive teal-text">Signalqualität WH65</h5>
+
+      <div class="row">
+        <div class="col-3 text-muted font-small lo-text">
+          1.000000 <br>
+          (01:54)
+        </div>
+        <div class="col-6">
+          <h4 class="h2-responsive">4.000000</h4>
+        </div>
+        <div class="col-3 text-muted font-small hi-text">
+          4.000000 <br>
+          (00:00)
+        </div>
+
+        <div class="col-12 mt-4">
+          <div id="wh65_sig-chart"></div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+      
+      <div class="col-12 col-lg-6 mb-4">
+  <div class="card">
+    <div class="card-body text-center">
+      <h5 class="h5-responsive teal-text">Signalqualität DP40</h5>
+
+      <div class="row">
+        <div class="col-3 text-muted font-small lo-text">
+          1.000000 <br>
+          (01:54)
+        </div>
+        <div class="col-6">
+          <h4 class="h2-responsive">4.000000</h4>
+        </div>
+        <div class="col-3 text-muted font-small hi-text">
+          4.000000 <br>
+          (00:00)
+        </div>
+
+        <div class="col-12 mt-4">
+          <div id="wh31_ch1_sig-chart"></div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+
+    </div>
+
+  </div>
+
+</main>
+
+
+<footer class="page-footer font-small teal pt-4">
+
+    <div class="container-fluid text-center text-md-left mb-4">
+
+        <div class="row">
+
+            <div class="col-md-6 mt-md-0 mt-3">
+
+                <h5 class="text-uppercase">Über</h5>
+
+                <table class="d-inline">
+                    <tr>
+                        <td>Hardware:</td>
+                        <td>GW1000</td>
+                    </tr>
+                    <tr>
+                        <td>Höhe:</td>
+                        <td>261 meters</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="telemetry.html">
+                                Telemetrie
+                            </a>
+                        </td>
+                        <td></td>
+                    </tr>
+                </table>
+
+
+            </div>
+
+            <hr class="clearfix w-100 d-md-none pb-3">
+
+            <div class="col-md-3 mb-md-0 mb-3">
+
+                <h5 class="text-uppercase">rureifel-wetter.de</h5>
+
+                <p>Meine Wetterstation sammelt Wetterdaten am Rande der Eifel. Hardware: Froggit DP1500 Wi-Fi Wetterserver + WH65-Y-Design Außeneinheit + WH32F Außenbereich Thermo-Hygrometer Funksensor</p>
+            </div>
+
+            <div class="col-md-3 mb-md-0 mb-3">
+
+                <h5 class="text-uppercase">Links</h5>
+
+                <ul class="list-unstyled">
+                    <li>
+                        <a href="https://www.lightningmaps.org" target="_blank" rel="noopener">Lightning Maps</a>
+                    </li>
+                    <li>
+                        <a href="https://www.windy.com" target="_blank" rel="noopener">Windy</a>
+                    </li>
+                    <li>
+                        <a href="https://goo.gl/maps/DS7gzF6JJAsDRq4s6" target="_blank" rel="noopener">Standort der Wetterstation</a>
+                    </li>
+                </ul>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="footer-copyright text-center py-3">
+        &copy; 2026 André Victor
+
+          <span class="mx-2">&bull;</span>
+          Powered by <a href="https://weewx.com" target="_blank">weewx</a>
+          v5.5.2
+
+          <span class="mx-2">&bull;</span>
+          <a href="https://neoground.com/projects/neowx-material" target="_blank">NeoWX Material</a> skin
+          v1.11
+
+    </div>
+
+</footer>
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/popper.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/mdb.min.js"></script>
+<script src="js/vendor/moment-with-locales.min.js"></script>
+<script type="text/javascript">moment.locale('de')</script>
+<script src="js/vendor/apexcharts/apexcharts.min.js"></script>
+<script type="text/javascript" src="js/app.js"></script>
+
+<script type="text/javascript">
+    var config_mode = 'auto';
+    var theme_mode = 'light';
+    if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        theme_mode = 'dark';
+    }
+    // Override mode by config
+    if(config_mode != "auto") {
+        theme_mode = config_mode;
+    }
+
+    window.Apex = {
+        theme: {
+            mode: theme_mode,
+            palette: 'palette1'
+        },
+        dataLabels: {
+            enabled: false
+        },
+        stroke: {
+            curve: 'smooth',
+            width: 2
+        },
+        markers: {
+            size: 0,
+        },
+        chart: {
+            height: 300,
+            stacked: false,
+            zoom: {
+                type: 'x',
+                enabled: true,
+                autoScaleYaxis: true
+            },
+            toolbar: {
+                autoSelected: 'zoom',
+                export: {
+                    csv: {
+                        headerCategory: 'DateTime',
+                        dateFormatter(timestamp) {
+                            return moment.unix(timestamp).toISOString()
+                        }
+                    }
+                }
+            },
+            locales: [
+{
+  "name": "de",
+  "options": {
+    "months": [
+      "Januar",
+      "Februar",
+      "März",
+      "April",
+      "Mai",
+      "Juni",
+      "Juli",
+      "August",
+      "September",
+      "Oktober",
+      "November",
+      "Dezember"
+    ],
+    "shortMonths": [
+      "Jan",
+      "Feb",
+      "Mär",
+      "Apr",
+      "Mai",
+      "Jun",
+      "Jul",
+      "Aug",
+      "Sep",
+      "Okt",
+      "Nov",
+      "Dez"
+    ],
+    "days": [
+      "Sonntag",
+      "Montag",
+      "Dienstag",
+      "Mittwoch",
+      "Donnerstag",
+      "Freitag",
+      "Samstag"
+    ],
+    "shortDays": ["So", "Mo", "Di", "Mi", "Do", "Fr", "Sa"],
+    "toolbar": {
+      "exportToSVG": "SVG speichern",
+      "exportToPNG": "PNG speichern",
+      "exportToCSV": "CSV speichern",
+      "menu": "Menü",
+      "selection": "Auswahl",
+      "selectionZoom": "Auswahl vergrößern",
+      "zoomIn": "Vergrößern",
+      "zoomOut": "Verkleinern",
+      "pan": "Verschieben",
+      "reset": "Zoom zurücksetzen"
+    }
+  }
+}
+            ],
+            defaultLocale: 'de',
+            animations: {
+                enabled: false
+            },
+        },
+    }
+</script>
+
+
+
+
+
+
+<script type="text/javascript">
+  // Config templates
+
+  var graph_area_config = {
+
+chart: {
+    type: 'area'
+},
+fill: {
+    type: 'gradient',
+    gradient: {
+        shadeIntensity: 1,
+        inverseColors: false,
+        opacityFrom: 0.6,
+        opacityTo: 0,
+        stops: [0, 75, 100]
+    },
+},
+xaxis: {
+    type: 'datetime',
+    hideOverlappingLabels: true,
+    tickAmount: 8,
+    labels: {
+        formatter: function(val, timestamp) {
+            return moment.unix(timestamp).format("dd DD HH:mm");
+        }
+    }
+},
+tooltip: {
+    x: {
+        format: "dd DD.MM. HH:MM"
+    }
+},  }
+
+  
+
+
+  
+
+new ApexCharts(document.querySelector('#wh65_sig-chart'), {
+  ...graph_area_config,
+  yaxis: {
+    labels: {
+      formatter: function (val) {
+        return formatNumber(val, "%f") + "";
+      }
+    }
+  },
+  series: [
+    {
+      name: "Signalqualität WH65",
+      data: [       [1794380400, 4.000000],
+      [1794381000, 4.000000],
+      [1794381600, 4.000000],
+      [1794382200, 4.000000],
+      [1794382800, 4.000000],
+      [1794383400, 4.000000],
+      [1794384000, 4.000000],
+      [1794384600, 4.000000],
+      [1794385200, 4.000000],
+      [1794385800, 4.000000],
+      [1794386400, 4.000000],
+      [1794387000, 4.000000],
+      [1794387600, 4.000000],
+      [1794388200, 4.000000],
+      [1794388800, 4.000000],
+      [1794389400, 4.000000],
+      [1794390000, 4.000000],
+      [1794390600, 4.000000],
+      [1794391200, 4.000000],
+      [1794391800, 4.000000],
+      [1794392400, 3.500000],
+      [1794393000, 4.000000],
+      [1794393600, 4.000000],
+      [1794394200, 3.500000],
+      [1794394800, 4.000000],
+      [1794395400, 4.000000],
+      [1794396000, 4.000000],
+      [1794396600, 4.000000],
+      [1794397200, 4.000000],
+      [1794397800, 4.000000],
+      [1794398400, 4.000000],
+      [1794399000, 4.000000],
+      [1794399600, 4.000000],
+      [1794400200, 4.000000],
+      [1794400800, 4.000000],
+      [1794401400, 4.000000],
+      [1794402000, 4.000000],
+      [1794402600, 4.000000],
+      [1794403200, 4.000000],
+      [1794403800, 4.000000],
+      [1794404400, 4.000000],
+      [1794405000, 4.000000],
+      [1794405600, 4.000000],
+      [1794406200, 4.000000],
+      [1794406800, 4.000000],
+      [1794407400, 4.000000],
+      [1794408000, 4.000000],
+      [1794408600, 4.000000],
+      [1794409200, 4.000000],
+      [1794409800, 4.000000],
+      [1794410400, 4.000000],
+      [1794411000, 4.000000],
+      [1794411600, 4.000000],
+      [1794412200, 4.000000],
+      [1794412800, 4.000000],
+      [1794413400, 3.500000],
+      [1794414000, 4.000000],
+      [1794414600, 4.000000],
+      [1794415200, 4.000000],
+      [1794415800, 4.000000],
+      [1794416400, 4.000000],
+      [1794417000, 4.000000],
+      [1794417600, 4.000000],
+      [1794418200, 4.000000],
+      [1794418800, 4.000000],
+      [1794419400, 4.000000],
+      [1794420000, 4.000000],
+      [1794420600, 4.000000],
+      [1794421200, 4.000000],
+      [1794421800, 4.000000],
+      [1794422400, 4.000000],
+      [1794423000, 4.000000],
+      [1794423600, 4.000000],
+      [1794424200, 4.000000],
+      [1794424800, 4.000000],
+      [1794425400, 4.000000],
+      [1794426000, 4.000000],
+      [1794426600, 4.000000],
+      [1794427200, 4.000000],
+      [1794427800, 4.000000],
+      [1794428400, 4.000000],
+      [1794429000, 4.000000],
+      [1794429600, 4.000000],
+      [1794430200, 4.000000],
+      [1794430800, 4.000000],
+      [1794431400, 4.000000],
+      [1794432000, 4.000000],
+      [1794432600, 4.000000],
+      [1794433200, 4.000000],
+      [1794433800, 4.000000],
+      [1794434400, 4.000000],
+      [1794435000, 4.000000],
+      [1794435600, 4.000000],
+      [1794436200, 4.000000],
+      [1794436800, 4.000000],
+      [1794437400, 4.000000],
+      [1794438000, 4.000000],
+      [1794438600, 4.000000],
+      [1794439200, 4.000000],
+      [1794439800, 4.000000],
+      [1794440400, 4.000000],
+      [1794441000, 4.000000],
+      [1794441600, 4.000000],
+      [1794442200, 4.000000],
+      [1794442800, 4.000000],
+      [1794443400, 4.000000],
+      [1794444000, 3.500000],
+      [1794444600, 2.500000],
+      [1794445200, 4.000000],
+      [1794445800, 4.000000],
+      [1794446400, 4.000000],
+      [1794447000, 4.000000],
+      [1794447600, 4.000000],
+      [1794448200, 4.000000],
+      [1794448800, 4.000000],
+      [1794449400, 4.000000],
+      [1794450000, 4.000000],
+      [1794450600, 4.000000],
+      [1794451200, 4.000000],
+      [1794451800, 4.000000],
+      [1794452400, 4.000000],
+      [1794453000, 4.000000],
+      [1794453600, 4.000000],
+      [1794454200, 4.000000],
+      [1794454800, 4.000000],
+      [1794455400, 4.000000],
+      [1794456000, 4.000000],
+      [1794456600, 4.000000],
+      [1794457200, 4.000000],
+      [1794457800, 4.000000],
+      [1794458400, 4.000000],
+      [1794459000, 4.000000],
+      [1794459600, 4.000000],
+      [1794460200, 4.000000],
+      [1794460800, 4.000000],
+      [1794461400, 3.500000],
+      [1794462000, 4.000000],
+      [1794462600, 4.000000],
+      [1794463200, 4.000000],
+      [1794463800, 4.000000],
+      [1794464400, 4.000000],
+      [1794465000, 4.000000],
+      [1794465600, 4.000000],
+      [1794466200, 4.000000],
+ ]
+    }
+  ]
+}).render()
+
+
+
+  
+
+
+  
+
+new ApexCharts(document.querySelector('#wh31_ch1_sig-chart'), {
+  ...graph_area_config,
+  yaxis: {
+    labels: {
+      formatter: function (val) {
+        return formatNumber(val, "%f") + "";
+      }
+    }
+  },
+  series: [
+    {
+      name: "Signalqualität DP40",
+      data: [       [1794380400, 4.000000],
+      [1794381000, 4.000000],
+      [1794381600, 4.000000],
+      [1794382200, 4.000000],
+      [1794382800, 4.000000],
+      [1794383400, 4.000000],
+      [1794384000, 4.000000],
+      [1794384600, 4.000000],
+      [1794385200, 4.000000],
+      [1794385800, 4.000000],
+      [1794386400, 4.000000],
+      [1794387000, 4.000000],
+      [1794387600, 4.000000],
+      [1794388200, 4.000000],
+      [1794388800, 4.000000],
+      [1794389400, 4.000000],
+      [1794390000, 4.000000],
+      [1794390600, 4.000000],
+      [1794391200, 4.000000],
+      [1794391800, 4.000000],
+      [1794392400, 4.000000],
+      [1794393000, 4.000000],
+      [1794393600, 4.000000],
+      [1794394200, 4.000000],
+      [1794394800, 4.000000],
+      [1794395400, 4.000000],
+      [1794396000, 4.000000],
+      [1794396600, 4.000000],
+      [1794397200, 4.000000],
+      [1794397800, 4.000000],
+      [1794398400, 4.000000],
+      [1794399000, 4.000000],
+      [1794399600, 4.000000],
+      [1794400200, 4.000000],
+      [1794400800, 4.000000],
+      [1794401400, 4.000000],
+      [1794402000, 4.000000],
+      [1794402600, 4.000000],
+      [1794403200, 4.000000],
+      [1794403800, 4.000000],
+      [1794404400, 4.000000],
+      [1794405000, 4.000000],
+      [1794405600, 4.000000],
+      [1794406200, 4.000000],
+      [1794406800, 4.000000],
+      [1794407400, 4.000000],
+      [1794408000, 4.000000],
+      [1794408600, 4.000000],
+      [1794409200, 4.000000],
+      [1794409800, 4.000000],
+      [1794410400, 4.000000],
+      [1794411000, 4.000000],
+      [1794411600, 4.000000],
+      [1794412200, 4.000000],
+      [1794412800, 4.000000],
+      [1794413400, 4.000000],
+      [1794414000, 4.000000],
+      [1794414600, 4.000000],
+      [1794415200, 4.000000],
+      [1794415800, 4.000000],
+      [1794416400, 4.000000],
+      [1794417000, 4.000000],
+      [1794417600, 4.000000],
+      [1794418200, 4.000000],
+      [1794418800, 4.000000],
+      [1794419400, 4.000000],
+      [1794420000, 4.000000],
+      [1794420600, 4.000000],
+      [1794421200, 4.000000],
+      [1794421800, 4.000000],
+      [1794422400, 4.000000],
+      [1794423000, 4.000000],
+      [1794423600, 4.000000],
+      [1794424200, 4.000000],
+      [1794424800, 4.000000],
+      [1794425400, 4.000000],
+      [1794426000, 4.000000],
+      [1794426600, 4.000000],
+      [1794427200, 4.000000],
+      [1794427800, 4.000000],
+      [1794428400, 4.000000],
+      [1794429000, 4.000000],
+      [1794429600, 4.000000],
+      [1794430200, 4.000000],
+      [1794430800, 4.000000],
+      [1794431400, 4.000000],
+      [1794432000, 4.000000],
+      [1794432600, 4.000000],
+      [1794433200, 4.000000],
+      [1794433800, 4.000000],
+      [1794434400, 4.000000],
+      [1794435000, 4.000000],
+      [1794435600, 4.000000],
+      [1794436200, 4.000000],
+      [1794436800, 4.000000],
+      [1794437400, 4.000000],
+      [1794438000, 4.000000],
+      [1794438600, 4.000000],
+      [1794439200, 4.000000],
+      [1794439800, 4.000000],
+      [1794440400, 4.000000],
+      [1794441000, 4.000000],
+      [1794441600, 4.000000],
+      [1794442200, 4.000000],
+      [1794442800, 4.000000],
+      [1794443400, 4.000000],
+      [1794444000, 4.000000],
+      [1794444600, 2.500000],
+      [1794445200, 4.000000],
+      [1794445800, 4.000000],
+      [1794446400, 4.000000],
+      [1794447000, 4.000000],
+      [1794447600, 4.000000],
+      [1794448200, 4.000000],
+      [1794448800, 4.000000],
+      [1794449400, 4.000000],
+      [1794450000, 4.000000],
+      [1794450600, 4.000000],
+      [1794451200, 4.000000],
+      [1794451800, 4.000000],
+      [1794452400, 4.000000],
+      [1794453000, 4.000000],
+      [1794453600, 4.000000],
+      [1794454200, 4.000000],
+      [1794454800, 4.000000],
+      [1794455400, 4.000000],
+      [1794456000, 4.000000],
+      [1794456600, 4.000000],
+      [1794457200, 4.000000],
+      [1794457800, 4.000000],
+      [1794458400, 4.000000],
+      [1794459000, 4.000000],
+      [1794459600, 4.000000],
+      [1794460200, 4.000000],
+      [1794460800, 4.000000],
+      [1794461400, 4.000000],
+      [1794462000, 4.000000],
+      [1794462600, 4.000000],
+      [1794463200, 4.000000],
+      [1794463800, 4.000000],
+      [1794464400, 4.000000],
+      [1794465000, 4.000000],
+      [1794465600, 4.000000],
+      [1794466200, 4.000000],
+ ]
+    }
+  ]
+}).render()
+
+
+
+  
+
+
+  
+
+
+  
+
+
+  
+
+
+  
+
+
+  
+
+
+  
+
+
+  
+
+
+  
+
+
+  
+
+
+  
+
+
+  
+
+
+  
+
+
+  
+
+
+  
+
+
+  
+
+
+  
+
+
+  
+
+
+</script>
+
+</body>
+</html>
